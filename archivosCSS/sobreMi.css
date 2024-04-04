@@ -1,0 +1,182 @@
+#sobreMiSection {
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+}
+
+#sobreMiSection #conSobreMi {
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobreMiSection #conSobreMi #tabs {
+    display: flex;
+    width: 70%;
+}
+
+#sobreMiSection #conSobreMi #tabs .tab {
+    cursor: pointer;
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    font-size: 1.2em;
+    border-bottom: none;
+    text-align: center;
+}
+
+#sobreMiSection #conSobreMi #tabs .tab:hover {
+    background-color: rgb(160, 255, 160);
+}
+
+#sobreMiSection #conSobreMi #tabs .activeTab:hover{
+    background-color: green;
+}
+
+#sobreMiSection #conSobreMi #tabs .activeTab {
+    background-color: green;
+    color: white;
+    width: 25%;
+    /* order: -2; */
+    position: relative;
+}
+
+#sobreMiSection #conSobreMi #contenedorInfo {
+    width: 70%;  
+    background-color: green;
+}
+
+#sobreMiSection #conSobreMi #contenedorInfo .info {
+    display: none;
+    padding: 1vh 2vw 1vh 2vw;
+    color: white;
+}
+
+.info h1 {
+    font-size: 1.4em;
+    margin-top: 2vh;
+    text-decoration: darkseagreen;
+
+}
+
+#sobreMiSection #conSobreMi #contenedorInfo .activeInfo {
+    display: block;    
+} 
+
+
+
+/* CONTENIDO DE SOBRE MI */
+
+#contenedorInfo #sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+#contenedorInfo #sobreMi #conFoto {
+    display: flex;
+    align-items: center;
+    margin-left: 6.5vw;
+}
+
+#contenedorInfo #sobreMi #conFoto ul {
+    margin-left: 1.5vw;
+    padding-left: 1vw;
+    border-left: 1px solid white;
+}
+
+#contenedorInfo #sobreMi #conFoto ul li {
+    font-size: 1.2em;
+    margin-top: 0.75vh;
+    margin-bottom: 0.75vh;
+    letter-spacing: 2px;
+}
+
+#contenedorInfo #sobreMi #conFoto #foto{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border: solid 4px white;
+    margin: 2vh 0;
+}
+
+#contenedorInfo #sobreMi p{
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 24px;
+    padding: 2vh 1.5vw 0 1.5vw;
+    margin: 0 5vw 5vh 5vw;
+    border-top: 1px solid white;
+}
+
+
+
+/* CONTENIDO DE HABILIDADES */
+
+#habil {
+    display: flex;
+    flex-direction: column;
+}
+
+.conHabilidad h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+.conHabilidad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1vh 1vw 1vh 2vw;
+    gap: 5%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+.barrita {
+    border: 1px solid white;
+    margin-left: 3vw;
+    margin-right: 1vw;
+    width: 20vw;
+    height: 1.6vh;
+    border-radius: 10px;
+    position: relative;
+}
+
+.barrita::after {
+    content: "";
+    top: 50%;
+    left: 1%;
+    position: absolute;
+    transform: translateY(-50%);
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#barrHC::after {
+    width: 83.3%; /* 0 a 98 - CAMBIAR EN RESPONSIVE */
+}
+
+#barrJS::after {
+    width: 68.6%; /* 0 a 98 */
+}
+
+#barrJV::after {
+    width: 39.2%; /* 0 a 98 */
+}
+
+#barrESP::after {
+    width: 98%; /* 0 a 98 */
+}
+
+#barrING::after {
+    width: 73.5%; /* 0 a 98 */
+}
+
+#barrDEU::after {
+    width: 9.8%; /* 0 a 98 */
+}
