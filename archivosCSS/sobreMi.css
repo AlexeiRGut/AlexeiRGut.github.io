@@ -71,43 +71,62 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
-}
-
-#contenedorInfo #sobreMi #conFoto {
-    display: flex;
-    align-items: center;
-    margin-left: 6.5vw;
-}
-
-#contenedorInfo #sobreMi #conFoto ul {
-    margin-left: 1.5vw;
-    padding-left: 1vw;
-    border-left: 1px solid white;
-}
-
-#contenedorInfo #sobreMi #conFoto ul li {
-    font-size: 1.2em;
-    margin-top: 0.75vh;
-    margin-bottom: 0.75vh;
-    letter-spacing: 2px;
-}
-
-#contenedorInfo #sobreMi #conFoto #foto{
-    width: 15%;
-    height: 15%;
-    border-radius: 50%;
-    border: solid 4px white;
     margin: 2vh 0;
 }
 
-#contenedorInfo #sobreMi p{
+#contenedorInfo #sobreMi #conInfo {
+    border-left: 1px solid white;
+    margin-left: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+#contenedorInfo #sobreMi #conInfo #conDatos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+#contenedorInfo #sobreMi #conInfo #conDatos ul {
+    margin-left: 1.5vw;
+    padding-left: 1vw;
+}
+
+#contenedorInfo #sobreMi #conInfo #conDatos ul li {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.2em;
+    margin-top: 1.25vh;
+    letter-spacing: 2px;
+}
+
+#contenedorInfo #sobreMi #conInfo #contenedorQueComoSoy,
+#contenedorInfo #sobreMi #conInfo #contenedorAficiones {
+    margin: 1vh 0 3vh 1.5vw;
+    padding-left: 1vw;
+}
+
+#contenedorInfo #sobreMi #conInfo h2{
+    font-size: 1.4em;
+    margin-bottom: 1vh;
+}
+
+#contenedorInfo #sobreMi #conInfo p {
     text-align: justify;
     letter-spacing: 2px;
     line-height: 24px;
-    padding: 2vh 1.5vw 0 1.5vw;
-    margin: 0 5vw 5vh 5vw;
-    border-top: 1px solid white;
+    text-indent: 2.5em;
+    margin-left: 2vw;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+#contenedorInfo #sobreMi #conInfo #contenedorAficiones ul li {
+    list-style:circle;
+    margin: 1.25vh 0 0 2vw;
+    font-size: 1.2em;
+    letter-spacing: 2px;
 }
 
 
