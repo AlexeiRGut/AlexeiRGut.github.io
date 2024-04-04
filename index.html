@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="archivosCSS/main.css"/>
+    <link rel="stylesheet" href="archivosCSS/sobreMi.css"/>
+    <link rel="stylesheet" href="archivosCSS/proyectos.css">
+
+    <title>Alexei Rojo</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <!--<input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>-->
+            <label class="logo">Alexei</label> 
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <div>
+            <h1>Soy <span id="nombre">Alexei Rojo Gutiérrez</span></h1>
+            <h2>programador junior</h2>
+            <a id="CV" download="AlexeiRojoGutierrez_CV" href="AlexeiCV.pdf" target="_blank">
+                Descargar CV</a>
+        </div>
+    </section>
+
+
+    <section id="sobreMiSection">
+        <div id="conSobreMi">
+            <ul id="tabs">
+                <li data-tab-target="#habil" class="tab activeTab">Habilidades</li>
+                <li data-tab-target="#sobreMi" class="tab">Sobre mí</li>
+                <li data-tab-target="#formacion" class="tab">Formación</li>
+            </ul>
+
+            <div id="contenedorInfo">
+
+                <div id="habil" class="info activeInfo">
+                    <h1>Tecnologías</h1>
+                    <div class="conHabilidad" id="conHtml">
+                        <h2>HTML/CSS</h2>
+                        <div class="barrita" id="barrHC"></div>
+                        <span>85%</span>
+                    </div>
+                    <div class="conHabilidad">
+                        <h2>JavaScript</h2>
+                        <div class="barrita" id="barrJS"></div>
+                        <span>70%</span>
+                    </div>
+                    <div class="conHabilidad">
+                        <h2>Java</h2>
+                        <div class="barrita" id="barrJV"></div>
+                        <span>40%</span>
+                    </div>
+
+                    <h1>Idiomas</h1>
+                    <div class="conHabilidad">
+                        <h2>Español</h2>
+                        <div class="barrita" id="barrESP"></div>
+                        <span>100%</span>
+                    </div>
+                    <div class="conHabilidad">
+                        <h2>Inglés</h2>
+                        <div class="barrita" id="barrING"></div>
+                        <span>70%</span>
+                    </div>
+                    <div class="conHabilidad">
+                        <h2>Alemán</h2>
+                        <div class="barrita" id="barrDEU"></div>
+                        <span>10%</span>
+                    </div>
+                </div>
+
+                <div id="sobreMi" class="info">
+                    <div id="conFoto">
+                        <img src="imagenes/Alexei.jpg" alt="Alexei" id="foto">
+                        <ul>
+                            <li>Rojo Gutiérrez, Alexei</li>
+                            <li>22 años</li>
+                            <li>Nacionalidad española</li>
+                            <li>Residente en Asturias</li>
+                        </ul>                        
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum, sapien id pharetra sodales, eros nibh sagittis neque, pellentesque gravida justo tellus sed risus. Vivamus vel lectus nibh. Donec orci neque, congue ac nisi vel, tincidunt luctus nunc. Ut neque est, elementum in felis id, facilisis varius purus. Pellentesque cursus nibh lacus, in dapibus libero hendrerit in. In at purus a mauris commodo malesuada vel id ex. In sed odio posuere, efficitur ligula sed, luctus risus. Mauris nec lorem dolor. In semper sem sem, in bibendum est bibendum sed. Vestibulum eu purus suscipit, cursus sapien quis, fringilla mauris. Suspendisse pharetra vestibulum magna ac suscipit. Aliquam eu varius nunc. Vivamus vulputate metus a justo elementum lacinia. Vivamus tortor mauris, elementum at ante sit amet, efficitur ultrices libero.
+                    </p>
+                </div>
+
+                <div id="formacion" class="info">
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projSection">
+
+    </section>
+
+    <script src="archivosJS/scrollNav.js"></script>
+    <script src="archivosJS/tabs.js"></script>
+
+    <!--  https://www.youtube.com/watch?v=5L6h_MrNvsk  -->
+    <!-- https://youtube.com/shorts/nJ5be4xSrjY?si=ScUiJWT5amSTN-Yx -->
+
+</body>
+</html>
