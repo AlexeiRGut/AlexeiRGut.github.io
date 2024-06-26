@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::after,
+*::before {
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color1: #255000;
+    --color2: #588100;
+    --color3: #8db600;
+    --color4: #8f0065;
+    --color5: #c6da52;
+}
+
+body {
+    background-image: url(../images/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    min-height: 10vh;
+
+    transition: all .2s ease;
+}
+
+header nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0;
+}
+
+#menu {
+    width: 30px;
+    display: none;
+    transition: .2s ease;
+    transition: transform .6s ease;
+    cursor: pointer;
+}
+
+.menuClicked {
+    filter: invert(12%) sepia(45%) saturate(6404%) hue-rotate(304deg) brightness(100%) contrast(114%); /* --color4 */
+    transform: rotateZ(-180deg)
+}
+
+#logo{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color: black;
+    transition: .2s ease;
+}
+
+#logo:hover {
+    color: var(--color4);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 1vh 2vh;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    transition: .2s ease;
+    white-space: nowrap;
+}
+
+header nav ul li::before { 
+    position: absolute;
+    content: "";
+    background-color: var(--color4);
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 10%;
+
+    transition: .2s ease;
+}
+
+header nav ul li:hover {
+    color: var(--color4);
+}
+
+header nav ul li:hover::before {
+    width: 80%;
+}
+
+.scrolled {
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(5px); 
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, .25);
+}
+
+
+@media only screen and (max-width: 920px) { 
+    
+    nav {
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) { 
+
+    header nav {
+        position: relative;
+        padding: 2vh 0;
+        width: 100%;
+    }
+
+    #headerUl {
+        transition: .5s ease;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: var(--color3);
+    }
+    
+    #menu {
+        display: block;
+    }
+
+    .hiddenUl {
+        left: -100%;
+    }
+
+    .displayedUl {
+        left: 0;
+    }
+
+}

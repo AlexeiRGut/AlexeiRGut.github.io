@@ -1,149 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="archivosCSS/main.css"/>
-    <link rel="stylesheet" href="archivosCSS/sobreMi.css"/>
-    <link rel="stylesheet" href="archivosCSS/proyectos.css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/presentacion.css" type="text/css">
+    <link rel="stylesheet" href="css/sobreMi.css" type="text/css">
 
-    <!-- Google Icons -->
-    <link rel="stylesheet" href="archivosCSS/esilosIconos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <title>Alexei Rojo</title>
+    <title>Alexei</title>
 </head>
 <body>
+
+
     <header>
-        <nav id="nav">
-
-            <!-- Icono de despliegue cuando responsive para móviles -->
-
-            <label class="logo">Alexei</label> 
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+        <nav>
+            <a id="logo" href="index.html">Alexei</a> 
+            <img id="menu" src="images/bars-solid.svg" alt="menu">
+            <ul id="headerUl" class="hiddenUl">
+                <li id="navInicio">Inicio</li>
+                <li id="navProyectos">Proyectos</li>
+                <li id="navSobreMi">Sobre mí</li>
+                <li id="navContacto">Contacto</li>
             </ul>
         </nav>
     </header>
-    
-    <section id="inicio">
-        <div>
+
+    <main>
+
+        <section id="presentacion">
             <h1>Soy <span id="nombre">Alexei Rojo Gutiérrez</span></h1>
-            <h2>programador junior</h2>
-            <a id="CV" download="AlexeiRojo_CV" href="AlexeiCV.pdf" target="_blank">
+            <h2>desarrollador de software junior</h2>
+            <a id="CV" download="AlexeiRojoGutierrez_CV" href="AlexeiCV.pdf" target="_blank">
                 Descargar CV</a>
-        </div>
-    </section>
+        </section>
+
+        <section id="formacion">
 
 
-    <section id="sobreMiSection">
-        <div id="conSobreMi">
-            <ul id="tabs">
-                <li data-tab-target="#habil" class="tab activeTab">Habilidades</li>
-                <li data-tab-target="#sobreMi" class="tab">Sobre mí</li>
-                <li data-tab-target="#formacion" class="tab">Formación</li>
-            </ul>
+        </section>
 
-            <div id="contenedorInfo">
 
-                <div id="habil" class="info activeInfo">
-                    <h1>Tecnologías</h1>
-                    <div class="conHabilidad" id="conHtml">
-                        <h2>HTML/CSS</h2>
-                        <div class="barrita" id="barrHC"></div>
-                        <span>85%</span>
-                    </div>
-                    <div class="conHabilidad">
-                        <h2>JavaScript</h2>
-                        <div class="barrita" id="barrJS"></div>
-                        <span>70%</span>
-                    </div>
-                    <div class="conHabilidad">
-                        <h2>Java</h2>
-                        <div class="barrita" id="barrJV"></div>
-                        <span>40%</span>
+        <!-- <section id="sobreMiSection">
+            <div id="conSobreMi">
+                <ul id="tabs">
+                    <li data-tab-target="#habil" class="tab activeTab">Habilidades</li>
+                    <li data-tab-target="#sobreMi" class="tab">Sobre mí</li>
+                    <li data-tab-target="#formacion" class="tab">Formación</li>
+                </ul>
+
+                <div id="contenedorInfo">
+
+                    <div id="habil" class="info activeInfo">
+                        <h1>Tecnologías</h1>
+                        <ul class="listaAptitudes">
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+
+                        <h1>Idiomas</h1>
+                        <ul class="listaAptitudes">
+                            <li>Español <span class="lvlIdioma">nativo</span></li>
+                            <li>Inglés <span class="lvlIdioma">C1</span></li>
+                            <li>Alemán <span class="lvlIdioma">A1</span></li>    
+                        </ul>
+    
                     </div>
 
-                    <h1>Idiomas</h1>
-                    <div class="conHabilidad">
-                        <h2>Español</h2>
-                        <div class="barrita" id="barrESP"></div>
-                        <span>100%</span>
-                    </div>
-                    <div class="conHabilidad">
-                        <h2>Inglés</h2>
-                        <div class="barrita" id="barrING"></div>
-                        <span>70%</span>
-                    </div>
-                    <div class="conHabilidad">
-                        <h2>Alemán</h2>
-                        <div class="barrita" id="barrDEU"></div>
-                        <span>10%</span>
-                    </div>
-                </div>
-
-                <div id="sobreMi" class="info">
-                    <div id="conInfo">
-                        <div id="conDatos">
-                            <ul>
-                                <li>
-                                    <span class="material-symbols-outlined">person</span>
-                                    Rojo Gutiérrez, Alexei
-                                </li>
-                                <li>
-                                    <span class="material-symbols-outlined">location_on</span>
-                                    22 años
-                                </li>
-                                <li>
-                                    <span class="material-symbols-outlined">id_card</span>
-                                    Nacionalidad española
-                                </li>
-                                <li>
-                                    <span class="material-symbols-outlined">calendar_month</span>
-                                    Avilés, Asturias, España
-                                </li>
-                            </ul>                        
-                        </div>
-                        <div id="contenedorQueComoSoy">
-                            <h2>Qué y cómo soy</h2>
-                            <p>
-                                Desarrollador junior en busca de un primer trabajo en el sector. De personalidad optimista y
-                                sosegada. Riguroso a la hora de trabajar, buen compañero y con buena capacidad de
-                                adaptación a cambios en el entorno laboral, así como a sus requerimientos e imprevistos.
-                            </p>
-                        </div>
-                        <div id="contenedorAficiones">
-                            <h2>Aficiones</h2>
-                            <ul>
-                                <li>Lectura, especialmente novelas de fantasía</li>
-                                <li>Deporte: fútbol, natación, gimnasio...</li>
-                                <li>Videojuegos</li>
-                                <li>Recorrer y observar entornos naturales</li>
-                            </ul>
+                    <div id="sobreMi" class="info">
+                        <div id="conInfo">
+                            <div id="conDatos">
+                                <ul>
+                                    <li>
+                                        <span class="material-symbols-outlined">person</span>
+                                        Rojo Gutiérrez, Alexei
+                                    </li>
+                                    <li>
+                                        <span class="material-symbols-outlined">location_on</span>
+                                        22 años
+                                    </li>
+                                    <li>
+                                        <span class="material-symbols-outlined">id_card</span>
+                                        Nacionalidad española
+                                    </li>
+                                    <li>
+                                        <span class="material-symbols-outlined">calendar_month</span>
+                                        Avilés, Asturias, España
+                                    </li>
+                                </ul>                        
+                            </div>
+                            <div id="contenedorQueComoSoy">
+                                <h2>Qué y cómo soy</h2>
+                                <p>
+                                    Desarrollador junior en busca de un primer trabajo en el sector. De personalidad optimista y
+                                    sosegada. Riguroso a la hora de trabajar, buen compañero y con buena capacidad de
+                                    adaptación a cambios en el entorno laboral, así como a sus requerimientos e imprevistos.
+                                </p>
+                            </div>
+                            <div id="contenedorAficiones">
+                                <h2>Aficiones</h2>
+                                <ul>
+                                    <li>Lectura, especialmente novelas de fantasía</li>
+                                    <li>Deporte: fútbol, natación, gimnasio...</li>
+                                    <li>Videojuegos</li>
+                                    <li>Recorrer y observar entornos naturales</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="formacion" class="info">
-                    
-                </div>
+                    <div id="formacion" class="info">
+                        
+                    </div>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section> -->
+    </main>
 
-    <section id="projSection">
 
-    </section>
 
-    <script src="archivosJS/scrollNav.js"></script>
-    <script src="archivosJS/tabs.js"></script>
 
-    <!--  https://www.youtube.com/watch?v=5L6h_MrNvsk  -->
-    <!-- https://youtube.com/shorts/nJ5be4xSrjY?si=ScUiJWT5amSTN-Yx -->
+
+
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/tabs.js"></script>
 
 </body>
 </html>
