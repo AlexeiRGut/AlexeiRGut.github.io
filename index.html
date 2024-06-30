@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/header.css" type="text/css">
-    <link rel="stylesheet" href="css/presentacion.css" type="text/css">
-    <link rel="stylesheet" href="css/sobreMi.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
 
     <title>Alexei</title>
@@ -16,29 +15,71 @@
 
     <header>
         <nav>
-            <a id="logo" href="index.html">Alexei</a> 
+            <span id="logo" href="index.html">Alexei</span> 
             <img id="menu" src="images/bars-solid.svg" alt="menu">
             <ul id="headerUl" class="hiddenUl">
-                <li id="navInicio">Inicio</li>
-                <li id="navProyectos">Proyectos</li>
-                <li id="navSobreMi">Sobre mí</li>
-                <li id="navContacto">Contacto</li>
+                <li id="navHome">Inicio</li>
+                <li id="navProjects">Proyectos</li>
+                <li id="navAbout">Sobre mí</li>
+                <li id="navContact">Contacto</li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <section id="presentacion">
-            <h1>Soy <span id="nombre">Alexei Rojo Gutiérrez</span></h1>
-            <h2>desarrollador de software junior</h2>
-            <a id="CV" download="AlexeiRojoGutierrez_CV" href="AlexeiCV.pdf" target="_blank">
-                Descargar CV</a>
+        <section id="presentation">
+            <div>
+                <h1>Soy <span id="name">Alexei Rojo Gutiérrez</span></h1>
+                <h2>desarrollador de software junior</h2>
+                <h3><a id="CV" download="AlexeiRojoGutierrez_CV" href="AlexeiCV.pdf" target="_blank">
+                    Descargar CV</a></h3>
+            </div>
         </section>
 
-        <section id="formacion">
+        <!-- ORDEN DE SECCIONES -> presentacion, proyectos, sobreMi, contacto -->
 
+        <section id="aboutMe"> 
 
+            <div id="studies">
+
+                <ul class="studiesType">
+                    <li class="typeOfStudy">Formación académica
+                        <ul class="studiesList hiddenList">
+                            <li>CFGS en <span>DAM</span></li>
+                            <li>Bachillerato de <span>ciencias</span></li>
+                        </ul>
+                    </li>
+                    <li class="typeOfStudy">Formación complementaria
+                        <ul class="studiesList hiddenList">
+                            <li> <span>Inglés C1</span></li>
+                            <li>Certificado de profesionalidad en <span>desarrollo web</span></li>
+                            <li> <span>Alemán A1</span></li>
+                            <li>Curso online de <span>desarrollo web</span></li>
+                        </ul>
+                    </li>
+                    <li class="typeOfStudy">Experiencia profesional
+                        <ul class="studiesList hiddenList">
+                            <li>Prácticas en <span>Enfoque Visual SLL</span></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div id="extraInfo">
+                    Información de las formaciones
+                   
+                </div>
+
+            </div>
+
+            <div id="abilities">
+                <!-- languages and tecnologies -->
+            </div>
+            
+            <div id="whoAmI">
+
+            </div>
+            
         </section>
 
 
@@ -119,6 +160,8 @@
                 </div>
             </div>
         </section> -->
+
+        
     </main>
 
 
@@ -126,7 +169,8 @@
 
 
 
-    <script src="scripts/scroll.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/main.js"></script>
     <script src="scripts/tabs.js"></script>
 
 </body>

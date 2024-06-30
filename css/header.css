@@ -9,15 +9,15 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
 }
 
 :root {
     --color1: #255000;
     --color2: #588100;
     --color3: #8db600;
-    --color4: #8f0065;
-    --color5: #c6da52;
+    --color4: #c6da52;
+    --color5: #8f0065;
+    --color6: #c00889;
 }
 
 body {
@@ -58,7 +58,7 @@ header nav {
     cursor: pointer;
 }
 
-.menuClicked {
+.clickedMenu {
     filter: invert(12%) sepia(45%) saturate(6404%) hue-rotate(304deg) brightness(100%) contrast(114%); /* --color4 */
     transform: rotateZ(-180deg)
 }
@@ -69,19 +69,21 @@ header nav {
     font-size: 2.5em;
     letter-spacing: 1px;
     color: black;
+    cursor: pointer;
     transition: .2s ease;
 }
 
 #logo:hover {
-    color: var(--color4);
+    color: var(--color5);
 }
 
-header nav ul {
+header nav #headerUl {
     display: flex;
+    list-style: none;
     list-style: none;
 }
 
-header nav ul li {
+header nav #headerUl li {
     padding: 1vh 2vh;
     text-transform: uppercase;
     color: black;
@@ -92,10 +94,10 @@ header nav ul li {
     white-space: nowrap;
 }
 
-header nav ul li::before { 
+header nav #headerUl li::before { 
     position: absolute;
     content: "";
-    background-color: var(--color4);
+    background-color: var(--color5);
     height: 2px;
     width: 0;
     bottom: 0;
@@ -104,11 +106,11 @@ header nav ul li::before {
     transition: .2s ease;
 }
 
-header nav ul li:hover {
-    color: var(--color4);
+header nav #headerUl li:hover {
+    color: var(--color5);
 }
 
-header nav ul li:hover::before {
+header nav #headerUl li:hover::before {
     width: 80%;
 }
 
