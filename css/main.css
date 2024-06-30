@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::after,
+*::before {
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --color1: #255000;
+    --color2: #588100;
+    --color3: #8db600;
+    --color4: #c6da52;
+    --color5: #8f0065;
+    --color6: #c00889;
+}
+
 #presentation {
     height: 65vh;
     margin-top: 20vh;
