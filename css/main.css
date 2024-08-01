@@ -106,112 +106,186 @@
 }
 
 
+/* Sections */
+.sectionTitles {
+    font-size: 2.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    padding: 1vh 10vw;
+    margin-bottom: 2vh;
+}
 
+.sectionSubTitles {
+    width: 80%;
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1vh;
+}
 
+.sectionSubTitles:nth-of-type(odd) {
+    text-align: left;
+}
 
+.sectionSubTitles:nth-of-type(even) {
+    text-align: right;
+}
 
 /* FROMACIÓN */
 #aboutMe {
-    height: 65vh;
-    background-color: var(--color1);
-    margin-bottom: 10vh;
-    padding: 0 5vw;
-    overflow: hidden;
-
-}
-
-#aboutMe #studies{
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 5vh 2vh;
     display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: white;
+    padding: 2vh 0;
+}
+
+
+.aboutMePart {
+    display: flex;
+    width: 80%;
+    height: 40vh;
+    margin-bottom: 4vh;
+    overflow: hidden;
     justify-content: space-between;
+    box-shadow: 0 4px 20px rgb(215, 215, 215);
 }
 
-.studiesType {
-    width: 48%;
-    list-style: none;
+.aboutMePart img {
+    height: 100%;
+    transition: .8s ease-in-out;
+    cursor: pointer;
 }
 
-.studiesType .typeOfStudy {
-    display: block;
-    color: white;
-    padding: 1.5vh 0;
+.aboutMePart img:hover {
+    scale: 125%;
+}
+
+.aboutMePart div {
+    background-color: white;
+    padding: 2% 4%;
+    height: 100%;
+    z-index: 2;
+}
+
+.aboutMePart div p {
     font-size: 1.4em;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, .8);
+    text-align: justify;
 }
 
-.studiesType .typeOfStudy .studiesList {
-    list-style: none;
+.aboutMePart div h4 {
+    font-size: 1.4em;
+    font-weight: 500;
 }
 
-.hiddenList {
-    display: none;
-}
-
-.studiesType .typeOfStudy .studiesList li{ 
-    position: relative;
-    color: white;
-    font-size: 1.2em;
-    padding: .5vh 4vh;
-    margin: 1vh 0;
-    cursor: pointer;
-    transition: .2s ease;
-}
-
-.studiesType .typeOfStudy .studiesList li span{ 
-    font-size: 1.2em;
-    color: var(--color4);
-    transition: .2s ease;
-}
-
-.studiesType .typeOfStudy .studiesList li:hover span{ 
+.highlighted {
+    font-size: 1.4rem;
+    font-weight: 500;
     color: var(--color6);
 }
 
-.studiesType .typeOfStudy .studiesList li::before{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    width: 5%;
-    height: 2px;
-    background-color: var(--color4);
-    transition: .2s ease;
-} 
+.aboutMePart div h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 2vw;
+    color: grey;
+}
 
-.studiesType .typeOfStudy .studiesList li:hover::before {
-    background-color: var(--color6);
-    width: 40%;
-} 
+#whoAmI {
+    transform: translateX(-2.5vw);
+}
 
+#academicStudies {
+    transform: translateX(2.5vw);
+}
 
+#complementaryStudies {
+    transform: translateX(-2.5vw);
+}
 
-#extraInfo {
-    background-color: white;
-    height: 100%;
-    width: 48%;
+#experience {
+    transform: translateX(2.5vw);
 }
 
 
-@media only screen and (max-width: 900px) {
 
-    #aboutMe {
-        height: auto;
-    }
 
-    #aboutMe #studies {
-        flex-direction: column;
-        gap: 4vh;
-    }
+/* MODALES */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(5px);
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+}
 
-    .studiesType {
-        width: 100%;
-    }
+.hiddenModal {
+    display: none;
+}
 
-    #extraInfo {
-        width: 100%;
-    }
-} 
+.modalContent {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90%;
+    padding: 3%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalContent .x {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+
+    width: 20px;
+    transition: .2s ease;
+    transition: transform .6s ease;
+    cursor: pointer;
+}
+
+.modalContent .x:hover {
+    filter: invert(12%) sepia(45%) saturate(6404%) hue-rotate(304deg) brightness(100%) contrast(114%);
+}
+
+.modalContent .school {
+    width: 20%;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    padding: 0 10vw;
+}
+
+.modalContent h4 {
+    font-size: 1.4rem;
+    padding: 1vh 0;
+}
+
+.modalContent h5 {
+    font-size: 1.2rem;
+    padding-bottom: 1vh;
+    color: grey;
+}
+
+.modalContent p {
+    font-size: 1.2rem;
+}
+
+.modalContent ul li {
+    font-size: 1.2rem;
+    padding: .5vh 0;
+}
+
+.modalContent div {
+    width: 100%;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: space-around;
+}

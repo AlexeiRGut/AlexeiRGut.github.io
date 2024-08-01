@@ -40,6 +40,31 @@ menu.addEventListener('click', showHideUl)
 
 
 
+/* CERRAR MODALES */
+const closeModal = document.getElementsByClassName('x')
+
+Array.from(closeModal).forEach(cm => {
+    cm.addEventListener('click', function() {
+        cm.parentElement.parentElement.classList.add('hiddenModal');
+        document.body.style.overflow = '';
+    });
+});
+
+/* ABRIR MODALES */
+const courses = document.getElementsByClassName('courses')
+const modals = document.getElementsByClassName('modal')
+
+for (let course of courses) {
+    course.addEventListener('click', () => {
+        const targetId = course.dataset.modalTarget;
+        const modal = document.getElementById(targetId);
+
+        modal.classList.remove('hiddenModal');
+        document.body.style.overflow = 'hidden';
+    })
+}
+
+
 
 
 
@@ -49,6 +74,7 @@ const navProjects = document.getElementById('navProjects')
 const navAbout = document.getElementById('navAbout')
 const navContact = document.getElementById('navContact')
 
+/* NAVEAGACIÓN: desplaza al usuario hasta la sección Presentación */
 function movoToStart() {
     window.scroll({ top: 0, behavior: "smooth" })
 }
@@ -60,7 +86,7 @@ navHome.addEventListener('click', movoToStart)
 
 
 
-
+/* NAVEAGACIÓN: desplaza al usuario hasta la sección Sobre mí */
 navAbout.addEventListener('click', function() {
     const aboutMe = document.getElementById('aboutMe');
     const yOffset = aboutMe.getBoundingClientRect().top + window.scrollY;

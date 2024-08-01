@@ -21,7 +21,7 @@
 }
 
 body {
-    background-image: url(../images/forest.jpg);
+    background-image: url(../images/webDesign/forest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -56,10 +56,11 @@ header nav {
     transition: .2s ease;
     transition: transform .6s ease;
     cursor: pointer;
+    transition: .2s ease-in-out;
 }
 
 .clickedMenu {
-    filter: invert(12%) sepia(45%) saturate(6404%) hue-rotate(304deg) brightness(100%) contrast(114%); /* --color4 */
+    filter: invert(12%) sepia(45%) saturate(6404%) hue-rotate(304deg) brightness(100%) contrast(114%);
     transform: rotateZ(-180deg)
 }
 
@@ -86,12 +87,17 @@ header nav #headerUl {
 header nav #headerUl li {
     padding: 1vh 2vh;
     text-transform: uppercase;
-    color: black;
     font-size: 1.2em;
     cursor: pointer;
     position: relative;
     transition: .2s ease;
     white-space: nowrap;
+
+    /* Texto animado */
+    background: linear-gradient(to left, var(--color5) 50%, black 50%);
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
 }
 
 header nav #headerUl li::before { 
@@ -107,7 +113,7 @@ header nav #headerUl li::before {
 }
 
 header nav #headerUl li:hover {
-    color: var(--color5);
+    background-position: -100% 0; /* Texto animado */
 }
 
 header nav #headerUl li:hover::before {
@@ -115,13 +121,23 @@ header nav #headerUl li:hover::before {
 }
 
 .scrolled {
-    background-color: rgba(255, 255, 255, .25);
-    backdrop-filter: blur(5px); 
-    box-shadow: 4px 4px 4px rgba(255, 255, 255, .25);
+    /*     
+    BLUR NO FUNCIONA EN FIREFOX POR DEFECTO, A VECES
+    */
+    background-color: rgba(255, 255, 255, .35);
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, .35); 
+    /*
+    ALTERNATIVA: Aumentar opacidad
+
+    background-color: rgba(255, 255, 255, .75);
+    backdrop-filter: blur(8px);
+    */
 }
 
 
 @media only screen and (max-width: 920px) { 
+    
     
     nav {
         flex-direction: column;
