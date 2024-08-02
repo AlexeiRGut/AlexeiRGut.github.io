@@ -28,6 +28,8 @@
 
     <main>
 
+        <!-- ORDEN DE SECCIONES -> presentacion, proyectos, sobreMi, contacto -->
+
         <section id="presentation">
             <div>
                 <h1>Soy <span id="name">Alexei Rojo Gutiérrez</span></h1>
@@ -37,13 +39,13 @@
             </div>
         </section>
 
-        <!-- ORDEN DE SECCIONES -> presentacion, proyectos, sobreMi, contacto -->
-
+        
+        <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
         <section id="aboutMe"> 
             <h2 class="sectionTitles">Sobre mí</h2>
             <h3 class="sectionSubTitles right">Perfil</h3>
             <div class="aboutMePart" id="whoAmI">
-                <img class="school" src="images/webDesign/profile.png" alt="perfil"> <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
+                <img src="images/webDesign/profile.png" alt="perfil"> 
                 <div>
                     <p>
                         De personalidad optimista y tranquila. Soy riguroso a la hora
@@ -57,24 +59,21 @@
             <h3 class="sectionSubTitles">Formación académica</h3>
             <div class="aboutMePart" id="academicStudies">
                 <div>
+                    <h4 class="courses" data-modal-target="modalDAW">CFGS en <span class="highlighted">desarrollo de aplicaciones web</span> (DAW) | En curso</h4>
                     <h4 class="courses" data-modal-target="modalDAM">CFGS en <span class="highlighted">desarrollo de aplicaciones multiplataforma</span> (DAM)</h4>
-                    <!-- <h5>CIFP de Avilés - 2020 &#8594; 2022</h5> -->
                     <h4 class="courses" data-modal-target="modalBach">Bachillerato de modalidad <span class="highlighted">científico-tecnológica</span></h4>
-                    <!-- <h5>IES Ramón Menéndez Pidal - 2018 &#8594; 2020</h5> -->
                 </div>
-                <img src="images/webDesign/study.webp" alt="Formación académica"> <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
+                <img src="images/webDesign/study.webp" alt="Formación académica">
             </div>
 
             <h3 class="sectionSubTitles">Formación complementaria</h3>
             <div class="aboutMePart" id="complementaryStudies">
-                <img src="images/webDesign/moreStudy.png" alt="Formación complementaria"> <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
+                <img src="images/webDesign/moreStudy.png" alt="Formación complementaria">
                 <div>
-                    <p>
-                        De personalidad optimista y tranquila. Soy riguroso a la hora
-                        de trabajar, buen compañero y tengo buena predisposición a
-                        adaptarme a cambios en el entorno laboral, así como a sus
-                        requerimientos e imprevistos.
-                    </p>
+                    <h4 class="courses" data-modal-target="modalIngles">Nivel de <span class="highlighted">inglés C1</span></h4>
+                    <h4 class="courses" data-modal-target="modalCweb">Certificado de profesionalidad en <span class="highlighted">desarrollo de aplicaciones web</span></h4>
+                    <h4 class="courses" data-modal-target="modalAleman">Nivel de <span class="highlighted">Alemán A1</span> | A2 en curso</h4>
+                    <h4 class="courses" data-modal-target="modalCwebUdemy">Curso online de <span class="highlighted">desarrollo web</span></h4>
                 </div>
             </div>
 
@@ -88,36 +87,70 @@
                         requerimientos e imprevistos.
                     </p>
                 </div>
-                <img src="images/webDesign/work.webp" alt="Experiencia profesional"> <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
+                <img src="images/webDesign/work.webp" alt="Experiencia profesional">
             </div> 
 
         </section>
+
+
+       
 
         <!-- MODALES -->
         <div class="modal hiddenModal" id="modalDAM">
             <div class="modalContent">
                 <img class="x" src="images/webDesign/x-solid.svg" alt="menu">
-                <img src="images/schools/CifpAviles.jpg" alt="CIFP de Avilés">
+                <img class="school" src="images/schools/CifpAviles.jpg" alt="CIFP de Avilés">
                 <h4>CFGS en <span class="highlighted">desarrollo de aplicaciones multiplataforma</span> (DAM)</h4>
                 <h5>2020 &#8594; 2022</h5>
                 <p>Curso enfocado en el desarrollo de aplicaciones móviles e iniciación al desarrollo de videojuegos.
                     Algunas de las tecnologías cursadas y entornos empleados en DAM son:
                 </p>
                 <div>
-                <ul>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>C#</li>
-                    <li>XML</li>
-                    <li>CSS/HTML</li>
-                </ul>
-                <ul>
-                    <li>Android Studio</li>
-                    <li>Unity</li>
-                    <li>XAMPP</li>
-                    <li>Eclipse & Netbeans</li>
-                    <li>Visual Studio & Sublime Text</li>
-                </ul>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>C#</li>
+                        <li>XML</li>
+                        <li>CSS/HTML</li>
+                    </ul>
+                    <ul>
+                        <li>Android Studio</li>
+                        <li>Unity</li>
+                        <li>XAMPP</li>
+                        <li>Eclipse & Netbeans</li>
+                        <li>Visual Studio & Sublime Text</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal hiddenModal" id="modalDAW">
+            <div class="modalContent">
+                <img class="x" src="images/webDesign/x-solid.svg" alt="menu">
+                <img class="school" src="images/schools/CifpAviles.jpg" alt="CIFP de Avilés">
+                <h4>CFGS en <span class="highlighted">desarrollo de aplicaciones web</span> (DAW) | En curso</h4>
+                <h5>2024 &#8594; 2025</h5>
+                <p>Curso enfocado en el desarrollo de aplicaciones conn tecnnologías web. Este curso lo estoy realizando a distancia
+                    por lo que no es un impedimennto a la hora de buscar trabajo. Además, gracias a la certificación profesional que acabo de 
+                    obtener en la misma materia y al curso online que realicé, tengo una gran base que me permité realizar las asignaturas
+                    restantes con mucha soltura y aprovechar el tiempo libre para reforzar y ampliar conocimientos.
+                    </p><p>
+                    Laravel en concreto no lo he utilizado anteriormente por lo que, junto a AngularJS, Node.js o MongoDB, son algunas de las
+                    tecnologías en las que me enfocaré en aprender o reforzar durante este año escolar 2024/25.
+                    Algunas de las tecnologías cursadas y entornos empleados en DAW son:
+                </p>
+                <div>
+                    <ul>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                        <li>Laravel</li>
+                        <li>JavaScript</li>
+                        <li>CSS/HTML</li>
+                    </ul>
+                    <ul>
+                        <li>Eclipse</li>
+                        <li>Visual Studio & Sublime Text</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -125,12 +158,89 @@
         <div class="modal hiddenModal" id="modalBach">
             <div class="modalContent">
                 <img class="x" src="images/webDesign/x-solid.svg" alt="menu">
-                <img src="images/schools/IESMenendezPidalAviles.webp" alt="CIFP de Avilés">
+                <img class="school" src="images/schools/IESMenendezPidalAviles.webp" alt="CIFP de Avilés">
                 <h4>Bachillerato de modalidad <span class="highlighted">científico-tecnológica</span></h4>
                 <h5>2018 &#8594; 2020</h5>
                 <p>Bachillerato de modalidad científica que incluía las asignaturas de tecnologías de la Información 
                     y la comunicación y dibujo técnico.
                 </p>
+            </div>
+        </div>
+
+        <div class="modal hiddenModal" id="modalIngles">
+            <div class="modalContent">
+                <img class="x" src="images/webDesign/x-solid.svg" alt="menu">
+                <img class="school" src="images/schools/eoiAviles.webp" alt="CIFP de Avilés">
+                <h4>Nivel de <span class="highlighted">inglés C1</span></h4>
+                <h5>2023</h5>
+                <p>
+                    Superé el examen de certificación en la convocatoria ordinaria del año 2023.
+                </p>
+            </div>
+        </div>
+
+        <div class="modal hiddenModal" id="modalAleman">
+            <div class="modalContent">
+                <img class="x" src="images/webDesign/x-solid.svg" alt="menu">
+                <img class="school" src="images/schools/eoiAviles.webp" alt="CIFP de Avilés">
+                <h4>Nivel de <span class="highlighted">Alemán A1</span></h4>
+                <h5>2023 &#8594; 2024 | A2 en curso</h5>
+                <p>
+                    Superé el curso con normalidad este 2023/24. El primer año no se realiza examen de
+                    certificación, próximamente estaré cursando el nivel A2.
+                </p>
+            </div>
+        </div>
+
+        <div class="modal hiddenModal" id="modalCweb">
+            <div class="modalContent">
+                <img class="x" src="images/webDesign/x-solid.svg" alt="menu">
+                <img class="school" src="images/schools/ASATA.webp" alt="CIFP de Avilés">
+                <h4>Certificado de profesionalidad en <span class="highlighted">desarrollo de aplicaciones web</span></h4>
+                <h5>2024</h5>
+                <p>
+                   Curso de nivel FP III enfocado en el desarrollo de aplicaciones web con PHP y uso de APIs. Las asignnaturas cursadas
+                   equivalen a las del CSGS de DAW. Tecnologías, entornos y lenguajes empleados durante el transcurso del curso:
+                </p>
+                <div>
+                    <ul>
+                        <li>PHP</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>CSS/HTML</li>
+                    </ul>
+                    <ul>
+                        <li>XAMPP</li>
+                        <li>Postman</li>
+                        <li>Visual Studio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal hiddenModal" id="modalCwebUdemy">
+            <div class="modalContent">
+                <img class="x" src="images/webDesign/x-solid.svg" alt="menu">
+                <img class="school" src="images/schools/Udemy.webp" alt="CIFP de Avilés">
+                <h4>Curso online de <span class="highlighted">desarrollo web</span></h4>
+                <h5>2024</h5>
+                <p>
+                   Curso online impartido por Nicolás Schurmann. Enfocado en el desarrollo web con:
+                </p>
+                <div>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>React</li>
+                        <li>CSS/HTML</li>
+                    </ul>
+                    <ul>
+                        <li>Postman</li>
+                        <li>Sendgrid</li>
+                        <li>Visual Studio</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
