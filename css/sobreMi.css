@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+*::after,
+*::before {
+    font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --color1: #255000;
+    --color2: #588100;
+    --color3: #8db600;
+    --color4: #c6da52;
+    --color5: #8f0065;
+    --color6: #c00889;
+}
+
+#sobreMiSection {
+    overflow: hidden;
+    background-color: white;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+}
+
+#sobreMiSection #conSobreMi {
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobreMiSection #conSobreMi #tabs {
+    display: flex;
+    width: 70%;
+}
+
+#sobreMiSection #conSobreMi #tabs .tab {
+    cursor: pointer;
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    font-size: 1.2em;
+    border-bottom: none;
+    text-align: center;
+}
+
+#sobreMiSection #conSobreMi #tabs .tab:hover {
+    background-color: rgb(160, 255, 160);
+}
+
+#sobreMiSection #conSobreMi #tabs .activeTab:hover{
+    background-color: green;
+}
+
+#sobreMiSection #conSobreMi #tabs .activeTab {
+    background-color: green;
+    color: white;
+    width: 25%;
+    /* order: -2; */
+    position: relative;
+}
+
+#sobreMiSection #conSobreMi #contenedorInfo {
+    width: 70%;  
+    background-color: green;
+}
+
+#sobreMiSection #conSobreMi #contenedorInfo .info {
+    display: none;
+    padding: 1vh 2vw 1vh 2vw;
+    color: white;
+}
+
+.info h1 {
+    font-size: 1.4em;
+    margin-top: 2vh;
+    text-decoration: darkseagreen;
+
+}
+
+#sobreMiSection #conSobreMi #contenedorInfo .activeInfo {
+    display: block;    
+} 
+
+
+
+/* CONTENIDO DE SOBRE MI */
+
+#contenedorInfo #sobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+#contenedorInfo #sobreMi #conInfo {
+    border-left: 1px solid white;
+    margin-left: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+#contenedorInfo #sobreMi #conInfo #conDatos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+#contenedorInfo #sobreMi #conInfo #conDatos ul {
+    margin-left: 1.5vw;
+    padding-left: 1vw;
+}
+
+#contenedorInfo #sobreMi #conInfo #conDatos ul li {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.2em;
+    margin-top: 1.25vh;
+    letter-spacing: 2px;
+}
+
+#contenedorInfo #sobreMi #conInfo #contenedorQueComoSoy,
+#contenedorInfo #sobreMi #conInfo #contenedorAficiones {
+    margin: 1vh 0 3vh 1.5vw;
+    padding-left: 1vw;
+}
+
+#contenedorInfo #sobreMi #conInfo h2{
+    font-size: 1.4em;
+    margin-bottom: 1vh;
+}
+
+#contenedorInfo #sobreMi #conInfo p {
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-indent: 2.5em;
+    margin-left: 2vw;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+#contenedorInfo #sobreMi #conInfo #contenedorAficiones ul li {
+    list-style:circle;
+    margin: 1.25vh 0 0 2vw;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+
+
+/* CONTENIDO DE HABILIDADES */
+
+#habil {
+    display: flex;
+    flex-direction: column;
+}
+
+.conHabilidad h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+.conHabilidad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1vh 1vw 1vh 2vw;
+    gap: 5%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+.barrita {
+    border: 1px solid white;
+    margin-left: 3vw;
+    margin-right: 1vw;
+    width: 20vw;
+    height: 1.6vh;
+    border-radius: 10px;
+    position: relative;
+}
+
+.barrita::after {
+    content: "";
+    top: 50%;
+    left: 1%;
+    position: absolute;
+    transform: translateY(-50%);
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#barrHC::after {
+    width: 83.3%; /* 0 a 98 - CAMBIAR EN RESPONSIVE */
+}
+
+#barrJS::after {
+    width: 68.6%; /* 0 a 98 */
+}
+
+#barrJV::after {
+    width: 39.2%; /* 0 a 98 */
+}
+
+#barrESP::after {
+    width: 98%; /* 0 a 98 */
+}
+
+#barrING::after {
+    width: 73.5%; /* 0 a 98 */
+}
+
+#barrDEU::after {
+    width: 9.8%; /* 0 a 98 */
+}
