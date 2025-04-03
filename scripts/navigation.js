@@ -41,7 +41,7 @@ Array.from(closeModal).forEach((cm) => {
 });
 
 /* ABRIR MODALES */
-const courses = document.getElementsByClassName("aboutMeCard");
+const courses = document.getElementsByClassName("hasModal");
 const modals = document.getElementsByClassName("modal");
 
 for (let course of courses) {
