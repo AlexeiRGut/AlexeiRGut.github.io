@@ -52,28 +52,6 @@
   background-color: var(--color1);
 }
 
-@media only screen and (max-width: 600px) {
-  #presentation {
-    margin-top: 25vh;
-    text-align: center;
-  }
-
-  #presentation div {
-    background-color: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(5px);
-    /* box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.25); */
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 16px;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  #presentation {
-    height: 70vh;
-  }
-}
-
 /* Sections */
 .sectionTitles {
   font-size: 2.2rem;
@@ -103,8 +81,9 @@
   align-self: flex-end;
 } */
 
-/* FROMACIÓN */
+/* FORMACIÓN */
 #aboutMe {
+  position: relative; /* para las hojas */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -116,8 +95,261 @@
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
+/* HOJAS */
+.leaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+}
+
+#leaf1 {
+  animation: move1 5s linear infinite;
+}
+
+#leaf2 {
+  animation: move2 7.2s linear infinite;
+}
+
+#leaf3 {
+  animation: move3 6s linear infinite;
+}
+
+#leaf4 {
+  animation: move4 5.7s linear infinite;
+}
+
+#leaf5 {
+  animation: move5 6.4s linear infinite;
+}
+
+#leaf6 {
+  animation: move6 8s linear infinite;
+}
+
+#leaf7 {
+  animation: move7 7.3s linear infinite;
+}
+
+#leaf8 {
+  animation: move8 5.9s linear infinite;
+}
+
+#leaf9 {
+  animation: move9 6.7s linear infinite;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateX(-5vw) translateY(0vh) rotateX(0deg) rotateY(140deg);
+  }
+  20% {
+    transform: translateX(18vw) translateY(10vh) rotateX(90deg) rotateY(250deg);
+  }
+  40% {
+    transform: translateX(40vw) translateY(20vh) rotateX(180deg) rotateY(430deg);
+  }
+  60% {
+    transform: translateX(62vw) translateY(25vh) rotateX(270deg) rotateY(610deg);
+  }
+  80% {
+    transform: translateX(85vw) translateY(35vh) rotateX(360deg) rotateY(720deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(40vh) rotateX(450deg)
+      rotateY(820deg);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(-5vw) translateY(10vh) rotateX(0deg) rotateY(0deg);
+  }
+  20% {
+    transform: translateX(18vw) translateY(18vh) rotateX(60deg) rotateY(90deg);
+  }
+  40% {
+    transform: translateX(40vw) translateY(26vh) rotateX(120deg) rotateY(180deg);
+  }
+  60% {
+    transform: translateX(62vw) translateY(34vh) rotateX(210deg) rotateY(270deg);
+  }
+  80% {
+    transform: translateX(85vw) translateY(40vh) rotateX(300deg) rotateY(330deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(45vh) rotateX(360deg)
+      rotateY(360deg);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: translateX(-5vw) translateY(45vh) rotateX(45deg) rotateY(30deg);
+  }
+  20% {
+    transform: translateX(16vw) translateY(53vh) rotateX(120deg) rotateY(100deg);
+  }
+  40% {
+    transform: translateX(36vw) translateY(56vh) rotateX(180deg) rotateY(220deg);
+  }
+  60% {
+    transform: translateX(62vw) translateY(52vh) rotateX(250deg) rotateY(300deg);
+  }
+  80% {
+    transform: translateX(82vw) translateY(59vh) rotateX(320deg) rotateY(390deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(62vh) rotateX(390deg)
+      rotateY(450deg);
+  }
+}
+
+@keyframes move4 {
+  0% {
+    transform: translateX(-5vw) translateY(35vh) rotateX(0deg) rotateY(45deg);
+  }
+  20% {
+    transform: translateX(15vw) translateY(40vh) rotateX(60deg) rotateY(90deg);
+  }
+  40% {
+    transform: translateX(34vw) translateY(45vh) rotateX(120deg) rotateY(180deg);
+  }
+  60% {
+    transform: translateX(59vw) translateY(55vh) rotateX(180deg) rotateY(270deg);
+  }
+  80% {
+    transform: translateX(83vw) translateY(65vh) rotateX(240deg) rotateY(330deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(70vh) rotateX(300deg)
+      rotateY(420deg);
+  }
+}
+
+@keyframes move5 {
+  0% {
+    transform: translateX(-5vw) translateY(70vh) rotateX(0deg) rotateY(180deg);
+  }
+  20% {
+    transform: translateX(25vw) translateY(75vh) rotateX(30deg) rotateY(270deg);
+  }
+  40% {
+    transform: translateX(46vw) translateY(85vh) rotateX(60deg) rotateY(360deg);
+  }
+  60% {
+    transform: translateX(68vw) translateY(90vh) rotateX(120deg) rotateY(450deg);
+  }
+  80% {
+    transform: translateX(83vw) translateY(100vh) rotateX(150deg)
+      rotateY(540deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(115vh) rotateX(210deg)
+      rotateY(630deg);
+  }
+}
+
+@keyframes move6 {
+  0% {
+    transform: translateX(-5vw) translateY(85vh) rotateX(0deg) rotateY(90deg);
+  }
+  20% {
+    transform: translateX(20vw) translateY(88vh) rotateX(45deg) rotateY(180deg);
+  }
+  40% {
+    transform: translateX(40vw) translateY(90vh) rotateX(90deg) rotateY(270deg);
+  }
+  60% {
+    transform: translateX(60vw) translateY(92vh) rotateX(135deg) rotateY(360deg);
+  }
+  80% {
+    transform: translateX(80vw) translateY(95vh) rotateX(150deg) rotateY(450deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(100vh) rotateX(180deg)
+      rotateY(540deg);
+  }
+}
+
+@keyframes move7 {
+  0% {
+    transform: translateX(-5vw) translateY(110vh) rotateX(0deg) rotateY(180deg);
+  }
+  20% {
+    transform: translateX(18vw) translateY(115vh) rotateX(60deg) rotateY(270deg);
+  }
+  40% {
+    transform: translateX(39vw) translateY(120vh) rotateX(120deg)
+      rotateY(360deg);
+  }
+  60% {
+    transform: translateX(62vw) translateY(125vh) rotateX(150deg)
+      rotateY(450deg);
+  }
+  80% {
+    transform: translateX(85vw) translateY(130vh) rotateX(180deg)
+      rotateY(540deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(138vh) rotateX(240deg)
+      rotateY(630deg);
+  }
+}
+
+@keyframes move8 {
+  0% {
+    transform: translateX(-5vw) translateY(140vh) rotateX(0deg) rotateY(90deg);
+  }
+  20% {
+    transform: translateX(19vw) translateY(145vh) rotateX(45deg) rotateY(180deg);
+  }
+  40% {
+    transform: translateX(36vw) translateY(150vh) rotateX(90deg) rotateY(270deg);
+  }
+  60% {
+    transform: translateX(56vw) translateY(155vh) rotateX(135deg)
+      rotateY(360deg);
+  }
+  80% {
+    transform: translateX(76vw) translateY(160vh) rotateX(180deg)
+      rotateY(450deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(165vh) rotateX(210deg)
+      rotateY(540deg);
+  }
+}
+
+@keyframes move9 {
+  0% {
+    transform: translateX(-5vw) translateY(165vh) rotateX(0deg) rotateY(120deg);
+  }
+  20% {
+    transform: translateX(30vw) translateY(170vh) rotateX(60deg) rotateY(240deg);
+  }
+  40% {
+    transform: translateX(50vw) translateY(175vh) rotateX(120deg)
+      rotateY(330deg);
+  }
+  60% {
+    transform: translateX(76vw) translateY(180vh) rotateX(150deg)
+      rotateY(420deg);
+  }
+  80% {
+    transform: translateX(88vw) translateY(185vh) rotateX(180deg)
+      rotateY(510deg);
+  }
+  100% {
+    transform: translateX(105vw) translateY(190vh) rotateX(240deg)
+      rotateY(600deg);
+  }
+}
+
+/* PERFIL */
 #profile {
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(5px);
@@ -418,100 +650,80 @@
   justify-content: space-around;
 }
 
-/* .courses {
-  position: relative;
-  font-size: 1.4em;
-  font-weight: 500;
-  text-align: center;
-  cursor: pointer;
-  border-left: 10px solid var(--color3);
-  border-right: 10px solid var(--color3);
-  padding: 6px 0;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  width: 50px;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: 0.5s ease-in-out;
+@media only screen and (max-width: 768px) {
+  #cardsContainer {
+    justify-content: center;
+  }
+
+  #map {
+    position: relative;
+    width: 450px;
+    height: 450px;
+  }
+
+  #map .mapElement h4 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #map .mapElement h5 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
-.courses:hover {
-  padding: 6px 8px;
-  width: 80%;
+@media only screen and (max-width: 600px) {
+  #presentation {
+    margin-top: 25vh;
+    text-align: center;
+  }
+
+  #presentation div {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    /* box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.25); */
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 16px;
+  }
 }
 
-.courses::before {
-  position: absolute;
-  content: "|";
-  top: 0;
-  left: 0;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: white;
+@media only screen and (max-width: 500px) {
+  #map {
+    position: relative;
+    width: 350px;
+    height: 350px;
+  }
+
+  #map .mapElement h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #map .mapElement h5 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }
 
-.courses:hover::before {
-  content: "";
-  background-color: transparent;
-} */
+@media only screen and (max-width: 390px) {
+  #presentation {
+    height: 70vh;
+  }
 
-/* .highlighted {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: var(--color3);
-} */
+  #map {
+    position: relative;
+    width: 320px;
+    height: 320px;
+  }
 
-/* .aboutMePart div .courses {
-  position: relative;
-  font-size: 1.4em;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0.5vh 0;
-  margin-bottom: 2vh;
+  #map .mapElement h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #map .mapElement h5 {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
-
-.aboutMePart div .courses::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -8px;
-  background-color: var(--color3);
-  width: 3.5%;
-  min-width: 35px;
-  height: 100%;
-  z-index: -1;
-  transition: 0.2s ease;
-}
-
-.aboutMePart div .courses:hover::before {
-  width: 8.5%;
-  min-width: 65px;
-  background-color: var(--color6);
-}
-
-.highlighted {
-  font-size: 1.4rem;
-  font-weight: 500;
-
-  background: linear-gradient(to left, var(--color3) 50%, var(--color6) 50%);
-  background-clip: text;
-  color: transparent;
-  background-size: 200% 100%;
-  transition: 0.2s ease;
-}
-
-.aboutMePart div .courses:hover .highlighted {
-  background-position: -100% 0;
-}
-
-.aboutMePart div h5 {
-  font-size: 1.2em;
-  font-weight: 500;
-  padding-left: 2vw;
-  color: grey;
-  margin-bottom: 0.5vh;
-}*/
