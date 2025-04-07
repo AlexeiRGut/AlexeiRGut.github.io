@@ -45,15 +45,15 @@
 
       <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
       <section id="aboutMe">
-        <img src="images/webDesign/leaf.png" class="leaf" id="leaf1" />
-        <img src="images/webDesign/leaf_2.png" class="leaf" id="leaf2" />
-        <img src="images/webDesign/leaf.png" class="leaf" id="leaf3" />
+        <img src="images/webDesign/leaf_3.png" class="leaf" id="leaf1" />
+        <img src="images/webDesign/leaf.png" class="leaf" id="leaf2" />
+        <img src="images/webDesign/leaf_4.png" class="leaf" id="leaf3" />
         <img src="images/webDesign/leaf_2.png" class="leaf" id="leaf4" />
         <img src="images/webDesign/leaf.png" class="leaf" id="leaf5" />
-        <img src="images/webDesign/leaf_2.png" class="leaf" id="leaf6" />
+        <img src="images/webDesign/leaf_4.png" class="leaf" id="leaf6" />
         <img src="images/webDesign/leaf.png" class="leaf" id="leaf7" />
         <img src="images/webDesign/leaf_2.png" class="leaf" id="leaf8" />
-        <img src="images/webDesign/leaf.png" class="leaf" id="leaf9" />
+        <img src="images/webDesign/leaf_3.png" class="leaf" id="leaf9" />
         <h2 class="sectionTitles">Sobre mí</h2>
         <h3 class="sectionSubTitles">Perfil</h3>
         <div id="profile">
@@ -150,6 +150,50 @@
                 <img src="images/webDesign/card.png" alt="Perfil" />
               </div>
             </div>
+          </div>
+        </div>
+        <h3 class="sectionSubTitles">Experiencia profesional</h3>
+        <div id="experienceDoors">
+          <div class="doors">
+            <img src="images/webDesign/door.png" class="leftDoor" />
+            <div class="company">
+              <img
+                src="images/companies/i4life.png"
+                class="jobPicture"
+                alt="i4life"
+                id="i4life"
+              />
+              <span>13 enero a 25 marzo</span>
+              <span class="typeOfWork">prácticas</span>
+              <button
+                type="button"
+                class="hasModal"
+                data-modal-target="modali4life"
+              >
+                Ver detalles
+              </button>
+            </div>
+            <img src="images/webDesign/door.png" class="rightDoor" />
+          </div>
+          <div class="doors">
+            <img src="images/webDesign/door.png" class="leftDoor" />
+            <div class="company">
+              <img
+                src="images/companies/telefonica.png"
+                class="jobPicture"
+                alt="Telefónica"
+              />
+              <span>10 a 13 de septiembre</span>
+              <span class="typeOfWork">InnovaTE Gijón 2024</span>
+              <button
+                type="button"
+                class="hasModal"
+                data-modal-target="modalTelefonica"
+              >
+                Ver detalles
+              </button>
+            </div>
+            <img src="images/webDesign/door.png" class="rightDoor" />
           </div>
         </div>
         <h3 class="sectionSubTitles">Formación complementaria</h3>
@@ -391,6 +435,63 @@
         </div>
       </div>
 
+      <div class="modal hiddenModal" id="modali4life">
+        <div class="modalContent">
+          <img class="x" src="images/webDesign/close.svg" alt="cerrar" />
+          <img
+            class="school"
+            src="images/companies/i4life.png"
+            alt="CIFP de Avilés"
+          />
+          <h4>Prácticas en <span class="highlighted">i4life</span></h4>
+          <h5>13 de enero &#8594; 25 de marzo</h5>
+          <p>
+            Creación de aplicaciones web para clientes y también para uso de la
+            propia empresa. Desarrollé mi actividad con
+            <span class="highlighted">Wordpress+Elementor</span> durante las
+            primeras 3 semanas y media.
+          </p>
+          <p>
+            Se me ofreció formación en
+            <span class="highlighted">Angular+Ionic</span> lo que restaba de
+            semana y durante el mes y medio siguiente realicé mi labor con esas
+            tecnologías, trabajando como uno más en el departamento de
+            desarrollo y recibiendo apoyo de su parte en las dificultades que
+            encontrara.
+          </p>
+          <div>
+            <ul>
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>CSS/HTML</li>
+              <li>Wordpress</li>
+              <li>Elementor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal hiddenModal" id="modalTelefonica">
+        <div class="modalContent">
+          <img class="x" src="images/webDesign/close.svg" alt="cerrar" />
+          <img
+            class="school"
+            src="images/companies/telefonica.png"
+            alt="CIFP de Avilés"
+          />
+          <h4>
+            Ayudante de producción para
+            <span class="highlighted">Telefónica</span>
+          </h4>
+          <h5>10 de septiembre &#8594; 13 de septiembre</h5>
+          <p>
+            Exposición al público de soluciones tecnológicas innovadoras en el
+            evento en el evento
+            <span class="highlighted">InnovaTE Gijón 2024</span>
+          </p>
+        </div>
+      </div>
+
       <div class="modal hiddenModal" id="modalCweb">
         <div class="modalContent">
           <img class="x" src="images/webDesign/close.svg" alt="cerrar" />
@@ -420,7 +521,7 @@
             <ul>
               <li>XAMPP</li>
               <li>Postman</li>
-              <li>Visual Studio</li>
+              <li>VSCode</li>
             </ul>
           </div>
         </div>
@@ -453,7 +554,7 @@
             <ul>
               <li>Postman</li>
               <li>Sendgrid</li>
-              <li>Visual Studio</li>
+              <li>VSCode</li>
             </ul>
           </div>
         </div>

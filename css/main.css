@@ -104,6 +104,7 @@
   top: 0;
   left: 0;
   width: 150px;
+  opacity: 0;
 }
 
 #leaf1 {
@@ -112,14 +113,17 @@
 
 #leaf2 {
   animation: move2 7.9s linear infinite;
+  animation-delay: 2s;
 }
 
 #leaf3 {
   animation: move3 6.6s linear infinite;
+  animation-delay: 0.5s;
 }
 
 #leaf4 {
   animation: move4 6.2s linear infinite;
+  animation-delay: 4s;
 }
 
 #leaf5 {
@@ -128,6 +132,7 @@
 
 #leaf6 {
   animation: move6 8.8s linear infinite;
+  animation-delay: 3s;
 }
 
 #leaf7 {
@@ -140,10 +145,12 @@
 
 #leaf9 {
   animation: move9 7.3s linear infinite;
+  animation-delay: 5s;
 }
 
 @keyframes move1 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(-8vh) rotateX(-60deg) rotateY(60deg);
   }
   16.6% {
@@ -162,6 +169,7 @@
     transform: translateX(85vw) translateY(35vh) rotateX(360deg) rotateY(720deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(40vh) rotateX(450deg)
       rotateY(820deg);
   }
@@ -169,6 +177,7 @@
 
 @keyframes move2 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(4vh) rotateX(-60deg) rotateY(-70deg);
   }
   16.6% {
@@ -187,6 +196,7 @@
     transform: translateX(85vw) translateY(40vh) rotateX(300deg) rotateY(330deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(45vh) rotateX(360deg)
       rotateY(360deg);
   }
@@ -194,6 +204,7 @@
 
 @keyframes move3 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(45vh) rotateX(-45deg)
       rotateY(-80deg);
   }
@@ -213,6 +224,7 @@
     transform: translateX(82vw) translateY(59vh) rotateX(320deg) rotateY(390deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(62vh) rotateX(390deg)
       rotateY(450deg);
   }
@@ -220,6 +232,7 @@
 
 @keyframes move4 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(30vh) rotateX(-60deg) rotateY(0deg);
   }
   16.6% {
@@ -238,6 +251,7 @@
     transform: translateX(83vw) translateY(65vh) rotateX(240deg) rotateY(330deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(70vh) rotateX(300deg)
       rotateY(420deg);
   }
@@ -245,6 +259,7 @@
 
 @keyframes move5 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(70vh) rotateX(-30deg) rotateY(90deg);
   }
   16.6% {
@@ -264,6 +279,7 @@
       rotateY(540deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(115vh) rotateX(210deg)
       rotateY(630deg);
   }
@@ -271,6 +287,7 @@
 
 @keyframes move6 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(82vh) rotateX(-45deg) rotateY(0deg);
   }
   16.6% {
@@ -289,6 +306,7 @@
     transform: translateX(80vw) translateY(95vh) rotateX(150deg) rotateY(450deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(100vh) rotateX(180deg)
       rotateY(540deg);
   }
@@ -296,6 +314,7 @@
 
 @keyframes move7 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(106vh) rotateX(-60deg)
       rotateY(90deg);
   }
@@ -318,6 +337,7 @@
       rotateY(540deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(138vh) rotateX(240deg)
       rotateY(630deg);
   }
@@ -325,6 +345,7 @@
 
 @keyframes move8 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(134vh) rotateX(-45deg) rotateY(0deg);
   }
   16.6% {
@@ -345,6 +366,7 @@
       rotateY(450deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(165vh) rotateX(210deg)
       rotateY(540deg);
   }
@@ -352,6 +374,7 @@
 
 @keyframes move9 {
   0% {
+    opacity: 1;
     transform: translateX(-20vw) translateY(162vh) rotateX(-60deg) rotateY(0deg);
   }
   16.6% {
@@ -373,6 +396,7 @@
       rotateY(510deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(105vw) translateY(190vh) rotateX(240deg)
       rotateY(600deg);
   }
@@ -383,7 +407,7 @@
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(5px);
   border-radius: 24px;
-  max-width: 600px;
+  max-width: 900px;
   padding: 20px;
   margin: 0 5vw 40px 5vw;
   box-sizing: border-box;
@@ -461,20 +485,20 @@
 .aboutMeCard .cardInner .cardFront .cardInfo h4 {
   font-size: 1.2rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   height: 15%;
 }
 
 .highlighted {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--color3);
 }
 
 .aboutMeCard .cardInner .cardFront .cardInfo h5 {
   font-size: 1.1rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   height: 10%;
 }
 
@@ -567,6 +591,98 @@
   color: var(--color5);
 }
 
+/* EXPERIENCIA PROFESIONAL */
+#experienceDoors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.doors {
+  width: 360px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 45px;
+}
+
+.doors .company {
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.doors .company .jobPicture {
+  width: 80%;
+}
+
+.doors .company span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.doors .company .typeOfWork {
+  color: var(--color2);
+  margin-bottom: 20px;
+}
+
+.doors .company button {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  border: solid 3px var(--color3);
+  color: var(--color3);
+  padding: 8px 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.doors .company button:hover {
+  color: white;
+  background-color: var(--color3);
+}
+
+#i4life {
+  margin-bottom: 20px;
+}
+
+.doors .rightDoor {
+  width: 180px;
+  height: 306px;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  transition: 0.3s ease-in-out;
+}
+
+.doors .leftDoor {
+  width: 180px;
+  height: 306px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: 0.3s ease-in-out;
+}
+
+.doors:hover .rightDoor {
+  transform: translateX(130px) rotateY(180deg);
+}
+
+.doors:hover .leftDoor {
+  transform: translateX(-130px);
+}
+
 /* MODALES */
 .modal {
   position: fixed;
@@ -647,6 +763,12 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 920px) {
+  #presentation div {
+    top: 20%;
+  }
 }
 
 @media only screen and (max-width: 860px) {
@@ -753,6 +875,10 @@
   #map .mapElement h5 {
     font-size: 1.1rem;
     text-align: center;
+  }
+
+  #presentation div {
+    position: static;
   }
 }
 
