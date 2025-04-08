@@ -445,7 +445,7 @@
 }
 
 .aboutMeCard {
-  width: 340px;
+  width: 350px;
   height: 520px;
   border-radius: 24px;
   overflow: hidden;
@@ -611,7 +611,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 200px;
+  column-gap: 200px;
+  row-gap: 50px;
   margin-top: 20px;
   margin-bottom: 60px;
 }
@@ -976,8 +977,8 @@
 
   #map {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
   }
 
   #map .mapElement h4 {
