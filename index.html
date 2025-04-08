@@ -227,33 +227,42 @@
 
         <div id="contact">
           <h2 class="sectionTitles">Contacto</h2>
-          <a>
-            Si desea ponerse en contacto conmigo, puede escribirme
-            <a
-              class="highlighted"
-              id="mailtocopy"
-              style="color: var(--color5);"
-              href="mailto:alexeirojogutierrez@gmail.com"
-            >a este correo</a>, llamarme al número <a
-            class="highlighted"
-            id="teltocopy"
-            style="color: var(--color5);"
-            href="tel:+34622922462"
-          >+34 622 92 24 62</a>
-          </p>
+          <div id="toContanctMe">
+            <p>
+              Si desea ponerse en contacto conmigo, puede escribirme
+              <a
+                class="highlighted"
+                id="mailtocopy"
+                href="mailto:alexeirojogutierrez@gmail.com"
+                >a este correo</a
+              >
+              o llamarme al número
+              <a class="highlighted" id="teltocopy" href="tel:+34622922462"
+                >+34 622 92 24 62</a
+              >
+            </p>
 
-          <p>También puede copiarlos aquí:</p>
-          <div id="buttonsToCopy">
-          <button id="buttonCopyMail">
-            <img src="images/webDesign/copy.svg" alt="Copiar" />
-            alexeirojogutierrez@gmail.com
-          </button>
-          <button id="buttonCopyTel">
-            <img src="images/webDesign/copy.svg" alt="Copiar" />
-            +34 622 92 24 62
-          </button>
+            <p>También puede copiarlos desde aquí:</p>
+            <div id="buttonsToCopy">
+              <button onclick="copyMail()">
+                <img
+                  id="iconCopyMail"
+                  src="images/webDesign/copy.svg"
+                  alt="Copiar"
+                />
+                alexeirojogutierrez@gmail.com
+              </button>
+              <button onclick="copyTel()">
+                <img
+                  id="iconCopyTel"
+                  src="images/webDesign/copy.svg"
+                  alt="Copiar"
+                />
+                +34 622 92 24 62
+              </button>
+            </div>
+            <!-- <p>o usar el formulario de contacto.</p> -->
           </div>
-          <p>o usar el formulario de contacto.</p>
         </div>
       </section>
 

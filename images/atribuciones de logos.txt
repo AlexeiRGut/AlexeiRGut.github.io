@@ -1,6 +1,0 @@
-<a href="https://www.flaticon.es/iconos-gratis/css" title="css iconos">Css iconos creados por Pixel perfect - Flaticon</a>
-<a href="https://www.flaticon.es/iconos-gratis/html-5" title="html 5 iconos">Html 5 iconos creados por Pixel perfect - Flaticon</a>
-<a href="https://www.flaticon.es/iconos-gratis/php" title="php iconos">Php iconos creados por Freepik - Flaticon</a>
-<a href="https://www.flaticon.es/iconos-gratis/javascript" title="javascript iconos">Javascript iconos creados por Freepik - Flaticon</a>
-<a href="https://www.flaticon.es/iconos-gratis/mysql" title="mysql iconos">Mysql iconos creados por Pixel perfect - Flaticon</a>
-<a href="https://www.flaticon.es/iconos-gratis/java" title="java iconos">Java iconos creados por Freepik - Flaticon</a>

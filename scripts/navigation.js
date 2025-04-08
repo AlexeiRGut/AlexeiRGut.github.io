@@ -86,3 +86,81 @@ navContact.addEventListener("click", function () {
   const yOffset = contactoSection.getBoundingClientRect().top + window.scrollY;
   window.scrollTo({ top: yOffset, behavior: "smooth" });
 });
+
+function copyTel() {
+  const iconCopy = document.getElementById("iconCopyTel");
+  navigator.clipboard
+    .writeText("+34622922462")
+    .then(() => {
+      iconCopy.style.opacity = "0";
+      setTimeout(() => {
+        iconCopy.src = "images/webDesign/check.svg";
+        iconCopy.classList.add("nice");
+        iconCopy.style.opacity = "1";
+      }, 200);
+      setTimeout(() => {
+        iconCopy.style.opacity = "0";
+        setTimeout(() => {
+          iconCopy.src = "images/webDesign/copy.svg";
+          iconCopy.classList.remove("nice");
+          iconCopy.style.opacity = "1";
+        }, 200);
+      }, 5000);
+    })
+    .catch(() => {
+      iconCopy.style.opacity = "0";
+      setTimeout(() => {
+        iconCopy.src = "images/webDesign/close.svg";
+        iconCopy.classList.add("ohh");
+        iconCopy.style.opacity = "1";
+      }, 200);
+      icon;
+      setTimeout(() => {
+        iconCopy.style.opacity = "0";
+        setTimeout(() => {
+          iconCopy.src = "images/webDesign/copy.svg";
+          iconCopy.classList.remove("ohh");
+          iconCopy.style.opacity = "1";
+        }, 200);
+      }, 5000);
+    });
+}
+
+function copyMail() {
+  const iconCopy = document.getElementById("iconCopyMail");
+  navigator.clipboard
+    .writeText("alexeirojogutierrez@gmail.com")
+    .then(() => {
+      iconCopy.style.opacity = "0";
+      setTimeout(() => {
+        iconCopy.src = "images/webDesign/check.svg";
+        iconCopy.classList.add("nice");
+        iconCopy.style.opacity = "1";
+      }, 200);
+      setTimeout(() => {
+        iconCopy.style.opacity = "0";
+        setTimeout(() => {
+          iconCopy.src = "images/webDesign/copy.svg";
+          iconCopy.classList.remove("nice");
+          iconCopy.style.opacity = "1";
+        }, 200);
+      }, 5000);
+    })
+    .catch(() => {
+      iconCopy.style.opacity = "0";
+      setTimeout(() => {
+        iconCopy.src = "images/webDesign/close.svg";
+        iconCopy.classList.add("ohh");
+        iconCopy.style.opacity = "1";
+      }, 200);
+      icon;
+      setTimeout(() => {
+        iconCopy.style.opacity = "0";
+        setTimeout(() => {
+          iconCopy.src = "images/webDesign/copy.svg";
+          iconCopy.classList.remove("ohh");
+          iconCopy.style.opacity = "1";
+        }, 200);
+      }, 5000);
+    });
+}
