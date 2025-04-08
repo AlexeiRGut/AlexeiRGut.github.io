@@ -112,6 +112,7 @@
 }
 
 #leaf2 {
+  top: 8vh;
   animation: move2 7.9s linear infinite;
   animation-delay: 2s;
 }
@@ -122,6 +123,7 @@
 }
 
 #leaf4 {
+  top: 30vh;
   animation: move4 6.2s linear infinite;
   animation-delay: 4s;
 }
@@ -146,6 +148,23 @@
 #leaf9 {
   animation: move9 7.3s linear infinite;
   animation-delay: 5s;
+}
+
+#leaf10 {
+  top: 140vh;
+  animation: move2 7.7s linear infinite;
+  animation-delay: 1.5s;
+}
+
+#leaf11 {
+  top: 160vh;
+  animation: move4 7s linear infinite;
+}
+
+#leaf12 {
+  top: 180vh;
+  animation: move1 8.3s linear infinite;
+  animation-delay: 3s;
 }
 
 @keyframes move1 {
@@ -178,22 +197,23 @@
 @keyframes move2 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(4vh) rotateX(-60deg) rotateY(-70deg);
+    transform: translateX(-20vw) translateY(-4vh) rotateX(-60deg)
+      rotateY(-70deg);
   }
   16.6% {
-    transform: translateX(-5vw) translateY(10vh) rotateX(0deg) rotateY(0deg);
+    transform: translateX(-5vw) translateY(2vh) rotateX(0deg) rotateY(0deg);
   }
   33.3% {
-    transform: translateX(18vw) translateY(18vh) rotateX(60deg) rotateY(90deg);
+    transform: translateX(18vw) translateY(10vh) rotateX(60deg) rotateY(90deg);
   }
   50% {
-    transform: translateX(40vw) translateY(26vh) rotateX(120deg) rotateY(180deg);
+    transform: translateX(40vw) translateY(18vh) rotateX(120deg) rotateY(180deg);
   }
   66.6% {
-    transform: translateX(62vw) translateY(34vh) rotateX(210deg) rotateY(270deg);
+    transform: translateX(62vw) translateY(26vh) rotateX(210deg) rotateY(270deg);
   }
   83.3% {
-    transform: translateX(85vw) translateY(40vh) rotateX(300deg) rotateY(330deg);
+    transform: translateX(85vw) translateY(32vh) rotateX(300deg) rotateY(330deg);
   }
   100% {
     opacity: 1;
@@ -233,22 +253,22 @@
 @keyframes move4 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(30vh) rotateX(-60deg) rotateY(0deg);
+    transform: translateX(-20vw) translateY(0vh) rotateX(-60deg) rotateY(0deg);
   }
   16.6% {
-    transform: translateX(-5vw) translateY(35vh) rotateX(0deg) rotateY(45deg);
+    transform: translateX(-5vw) translateY(5vh) rotateX(0deg) rotateY(45deg);
   }
   33.3% {
-    transform: translateX(15vw) translateY(40vh) rotateX(60deg) rotateY(90deg);
+    transform: translateX(15vw) translateY(10vh) rotateX(60deg) rotateY(90deg);
   }
   50% {
-    transform: translateX(34vw) translateY(45vh) rotateX(120deg) rotateY(180deg);
+    transform: translateX(34vw) translateY(15vh) rotateX(120deg) rotateY(180deg);
   }
   66.6% {
-    transform: translateX(59vw) translateY(55vh) rotateX(180deg) rotateY(270deg);
+    transform: translateX(59vw) translateY(25vh) rotateX(180deg) rotateY(270deg);
   }
   83.3% {
-    transform: translateX(83vw) translateY(65vh) rotateX(240deg) rotateY(330deg);
+    transform: translateX(83vw) translateY(35vh) rotateX(240deg) rotateY(330deg);
   }
   100% {
     opacity: 1;
@@ -707,7 +727,7 @@
   width: 90%;
   max-width: 800px;
   max-height: 90%;
-  padding: 3%;
+  padding: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -733,36 +753,53 @@
 }
 
 .modalContent .school {
-  width: 20%;
+  height: 100px;
   border-bottom: 1px solid rgb(215, 215, 215);
   padding: 0 10vw;
 }
 
 .modalContent h4 {
   font-size: 1.4rem;
-  padding: 1vh 0;
+  padding: 15px 0;
 }
 
 .modalContent h5 {
   font-size: 1.2rem;
-  padding-bottom: 1vh;
+  padding-bottom: 15px;
   color: grey;
 }
 
 .modalContent p {
   font-size: 1.2rem;
-  margin-bottom: 1vh;
-}
-
-.modalContent ul li {
-  font-size: 1.2rem;
-  padding: 0.5vh 0;
+  margin-bottom: 15px;
 }
 
 .modalContent div {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.modalContent .techs {
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.modalContent .techs div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.modalContent .techs div span {
+  font-size: 1.1rem;
+}
+
+.modalContent .techs div .techPicture {
+  height: 50px;
 }
 
 @media only screen and (max-width: 920px) {
@@ -819,6 +856,18 @@
   #leaf9 {
     top: 130vh;
     animation: move9 4.8s linear infinite;
+  }
+  #leaf10 {
+    top: 150vh;
+    animation: move2 5.2s linear infinite;
+  }
+  #leaf11 {
+    top: 160vh;
+    animation: move5 4.5s linear infinite;
+  }
+  #leaf12 {
+    top: 180vh;
+    animation: move1 5.8s linear infinite;
   }
 }
 @media only screen and (max-width: 768px) {
