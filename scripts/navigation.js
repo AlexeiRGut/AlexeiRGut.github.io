@@ -105,7 +105,7 @@ function copyTel() {
           iconCopy.classList.remove("nice");
           iconCopy.style.opacity = "1";
         }, 200);
-      }, 5000);
+      }, 3000);
     })
     .catch(() => {
       iconCopy.style.opacity = "0";
@@ -122,7 +122,7 @@ function copyTel() {
           iconCopy.classList.remove("ohh");
           iconCopy.style.opacity = "1";
         }, 200);
-      }, 5000);
+      }, 3000);
     });
 }
 
@@ -144,7 +144,7 @@ function copyMail() {
           iconCopy.classList.remove("nice");
           iconCopy.style.opacity = "1";
         }, 200);
-      }, 5000);
+      }, 3000);
     })
     .catch(() => {
       iconCopy.style.opacity = "0";
@@ -161,6 +161,6 @@ function copyMail() {
           iconCopy.classList.remove("ohh");
           iconCopy.style.opacity = "1";
         }, 200);
-      }, 5000);
+      }, 3000);
     });
 }
