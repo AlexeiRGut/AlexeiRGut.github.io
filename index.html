@@ -25,7 +25,6 @@
 
     <main>
       <!-- ORDEN DE SECCIONES -> presentacion, proyectos, sobreMi, contacto -->
-
       <section id="presentation">
         <div>
           <h1>Soy <span id="name">Alexei Rojo Gutiérrez</span></h1>
@@ -43,10 +42,10 @@
         </div>
       </section>
 
-      <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
-      <section id="aboutMe">
-        <img src="images/webDesign/leaf_3.png" class="leaf" id="leaf1" />
-        <img src="images/webDesign/leaf.png" class="leaf" id="leaf2" />
+      <section id="content">
+        <!-- Imágenes generadas por https://pixlr.com/es/image-generator/ -->
+        <img src="images/webDesign/leaf.png" class="leaf" id="leaf1" />
+        <img src="images/webDesign/leaf_3.png" class="leaf" id="leaf2" />
         <img src="images/webDesign/leaf_4.png" class="leaf" id="leaf3" />
         <img src="images/webDesign/leaf_2.png" class="leaf" id="leaf4" />
         <img src="images/webDesign/leaf.png" class="leaf" id="leaf5" />
@@ -57,174 +56,179 @@
         <img src="images/webDesign/leaf.png" class="leaf" id="leaf10" />
         <img src="images/webDesign/leaf_4.png" class="leaf" id="leaf11" />
         <img src="images/webDesign/leaf_2.png" class="leaf" id="leaf12" />
-        <h2 class="sectionTitles">Sobre mí</h2>
-        <h3 class="sectionSubTitles">Perfil</h3>
-        <div id="profile">
-          <p>
-            De personalidad optimista y tranquila. Soy riguroso a la hora de
-            trabajar, buen compañero y tengo buena predisposición a adaptarme a
-            cambios en el entorno laboral, así como a sus requerimientos e
-            imprevistos.
-          </p>
-        </div>
-        <h3 class="sectionSubTitles">Formación académica</h3>
-        <div id="cardsContainer">
-          <div class="aboutMeCard hasModal" data-modal-target="modalDAW">
-            <div class="cardInner">
-              <div class="cardFront">
-                <div class="cardInfo">
-                  <img
-                    src="images/schools/CifpAviles.jpg"
-                    alt="CIFP de Avilés"
-                  />
-                  <h4>
-                    CFGS en
-                    <span class="highlighted"
-                      >desarrollo de aplicaciones web</span
-                    >
-                    (DAW)
-                  </h4>
-                  <h5>2024 &#8594; 2025 (finalizado)</h5>
-                  <ul>
-                    <li>Angular + Ionic</li>
-                    <li>TypeScript y JavaScript</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>HTML/CSS</li>
-                  </ul>
+        <div id="aboutMe">
+          <h2 class="sectionTitles">Sobre mí</h2>
+          <h3 class="sectionSubTitles">Perfil</h3>
+          <div id="profile">
+            <p>
+              De personalidad optimista y tranquila. Soy riguroso a la hora de
+              trabajar, buen compañero y tengo buena predisposición a adaptarme
+              a cambios en el entorno laboral, así como a sus requerimientos e
+              imprevistos.
+            </p>
+          </div>
+          <h3 class="sectionSubTitles">Formación académica</h3>
+          <div id="cardsContainer">
+            <div class="aboutMeCard hasModal" data-modal-target="modalDAW">
+              <div class="cardInner">
+                <div class="cardFront">
+                  <div class="cardInfo">
+                    <img
+                      src="images/schools/CifpAviles.jpg"
+                      alt="CIFP de Avilés"
+                    />
+                    <h4>
+                      CFGS en
+                      <span class="highlighted"
+                        >desarrollo de aplicaciones web</span
+                      >
+                      (DAW)
+                    </h4>
+                    <h5>2024 &#8594; 2025 (finalizado)</h5>
+                    <ul>
+                      <li>Angular + Ionic</li>
+                      <li>TypeScript y JavaScript</li>
+                      <li>PHP</li>
+                      <li>SQL</li>
+                      <li>HTML/CSS</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cardBack">
+                  <img src="images/webDesign/card.png" alt="Perfil" />
                 </div>
               </div>
-              <div class="cardBack">
-                <img src="images/webDesign/card.png" alt="Perfil" />
+            </div>
+            <div class="aboutMeCard hasModal" data-modal-target="modalDAM">
+              <div class="cardInner">
+                <div class="cardFront">
+                  <div class="cardInfo">
+                    <img
+                      src="images/schools/CifpAviles.jpg"
+                      alt="CIFP de Avilés"
+                    />
+                    <h4>
+                      CFGS en
+                      <span class="highlighted"
+                        >desarrollo de aplicaciones multiplataforma</span
+                      >
+                      (DAM)
+                    </h4>
+                    <h5>2020 &#8594; 2022</h5>
+                    <ul>
+                      <li>Java</li>
+                      <li>SQL</li>
+                      <li>C#</li>
+                      <li>XML</li>
+                      <li>CSS/HTML</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cardBack">
+                  <img src="images/webDesign/card.png" alt="Perfil" />
+                </div>
+              </div>
+            </div>
+            <div class="aboutMeCard hasModal" data-modal-target="modalBach">
+              <div class="cardInner">
+                <div class="cardFront">
+                  <div class="cardInfo">
+                    <img
+                      src="images/schools/IESMenendezPidalAviles.webp"
+                      alt="CIFP de Avilés"
+                    />
+                    <h4>
+                      Bachillerato de modalidad
+                      <span class="highlighted">científico-tecnológica</span>
+                    </h4>
+                    <h5>2018 &#8594; 2020</h5>
+                    <p>
+                      Bachillerato de modalidad científica que incluía las
+                      asignaturas de tecnologías de la Información y la
+                      comunicación y dibujo técnico.
+                    </p>
+                  </div>
+                </div>
+                <div class="cardBack">
+                  <img src="images/webDesign/card.png" alt="Perfil" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="aboutMeCard hasModal" data-modal-target="modalDAM">
-            <div class="cardInner">
-              <div class="cardFront">
-                <div class="cardInfo">
-                  <img
-                    src="images/schools/CifpAviles.jpg"
-                    alt="CIFP de Avilés"
-                  />
-                  <h4>
-                    CFGS en
-                    <span class="highlighted"
-                      >desarrollo de aplicaciones multiplataforma</span
-                    >
-                    (DAM)
-                  </h4>
-                  <h5>2020 &#8594; 2022</h5>
-                  <ul>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>C#</li>
-                    <li>XML</li>
-                    <li>CSS/HTML</li>
-                  </ul>
-                </div>
+          <h3 class="sectionSubTitles">Experiencia profesional</h3>
+          <div id="experienceDoors">
+            <div class="doors">
+              <img src="images/webDesign/door.png" class="leftDoor" />
+              <div class="company">
+                <img
+                  src="images/companies/i4life.png"
+                  class="jobPicture"
+                  alt="i4life"
+                  id="i4life"
+                />
+                <span>13 enero a 25 marzo</span>
+                <span class="typeOfWork">prácticas</span>
+                <button
+                  type="button"
+                  class="hasModal"
+                  data-modal-target="modali4life"
+                >
+                  Ver detalles
+                </button>
               </div>
-              <div class="cardBack">
-                <img src="images/webDesign/card.png" alt="Perfil" />
+              <img src="images/webDesign/door.png" class="rightDoor" />
+            </div>
+            <div class="doors">
+              <img src="images/webDesign/door.png" class="leftDoor" />
+              <div class="company">
+                <img
+                  src="images/companies/telefonica.png"
+                  class="jobPicture"
+                  alt="Telefónica"
+                />
+                <span>10 a 13 de septiembre</span>
+                <span class="typeOfWork">InnovaTE Gijón 2024</span>
+                <button
+                  type="button"
+                  class="hasModal"
+                  data-modal-target="modalTelefonica"
+                >
+                  Ver detalles
+                </button>
               </div>
+              <img src="images/webDesign/door.png" class="rightDoor" />
             </div>
           </div>
-          <div class="aboutMeCard hasModal" data-modal-target="modalBach">
-            <div class="cardInner">
-              <div class="cardFront">
-                <div class="cardInfo">
-                  <img
-                    src="images/schools/IESMenendezPidalAviles.webp"
-                    alt="CIFP de Avilés"
-                  />
-                  <h4>
-                    Bachillerato de modalidad
-                    <span class="highlighted">científico-tecnológica</span>
-                  </h4>
-                  <h5>2018 &#8594; 2020</h5>
-                  <p>
-                    Bachillerato de modalidad científica que incluía las
-                    asignaturas de tecnologías de la Información y la
-                    comunicación y dibujo técnico.
-                  </p>
-                </div>
-              </div>
-              <div class="cardBack">
-                <img src="images/webDesign/card.png" alt="Perfil" />
-              </div>
+          <h3 class="sectionSubTitles">Formación complementaria</h3>
+          <div id="map">
+            <div class="mapElement hasModal" data-modal-target="modalIngles">
+              <h4>Nivel de <span class="highlighted2">inglés C1</span></h4>
+              <h5>2023</h5>
+            </div>
+            <div class="mapElement hasModal" data-modal-target="modalAleman">
+              <h4>Nivel de <span class="highlighted2">Alemán A1</span></h4>
+              <h5>2023 &#8594; 2024</h5>
+            </div>
+            <div class="mapElement hasModal" data-modal-target="modalCweb">
+              <h4>
+                Certificado de profesionalidad en
+                <span class="highlighted2">desarrollo de aplicaciones web</span>
+              </h4>
+              <h5>2024</h5>
+            </div>
+            <div class="mapElement hasModal" data-modal-target="modalCwebUdemy">
+              <h4>
+                Curso online de <span class="highlighted2">desarrollo web</span>
+              </h4>
+              <h5>2023</h5>
             </div>
           </div>
         </div>
-        <h3 class="sectionSubTitles">Experiencia profesional</h3>
-        <div id="experienceDoors">
-          <div class="doors">
-            <img src="images/webDesign/door.png" class="leftDoor" />
-            <div class="company">
-              <img
-                src="images/companies/i4life.png"
-                class="jobPicture"
-                alt="i4life"
-                id="i4life"
-              />
-              <span>13 enero a 25 marzo</span>
-              <span class="typeOfWork">prácticas</span>
-              <button
-                type="button"
-                class="hasModal"
-                data-modal-target="modali4life"
-              >
-                Ver detalles
-              </button>
-            </div>
-            <img src="images/webDesign/door.png" class="rightDoor" />
-          </div>
-          <div class="doors">
-            <img src="images/webDesign/door.png" class="leftDoor" />
-            <div class="company">
-              <img
-                src="images/companies/telefonica.png"
-                class="jobPicture"
-                alt="Telefónica"
-              />
-              <span>10 a 13 de septiembre</span>
-              <span class="typeOfWork">InnovaTE Gijón 2024</span>
-              <button
-                type="button"
-                class="hasModal"
-                data-modal-target="modalTelefonica"
-              >
-                Ver detalles
-              </button>
-            </div>
-            <img src="images/webDesign/door.png" class="rightDoor" />
-          </div>
-        </div>
-        <h3 class="sectionSubTitles">Formación complementaria</h3>
-        <div id="map">
-          <div class="mapElement hasModal" data-modal-target="modalIngles">
-            <h4>Nivel de <span class="highlighted2">inglés C1</span></h4>
-            <h5>2023</h5>
-          </div>
-          <div class="mapElement hasModal" data-modal-target="modalAleman">
-            <h4>Nivel de <span class="highlighted2">Alemán A1</span></h4>
-            <h5>2023 &#8594; 2024</h5>
-          </div>
-          <div class="mapElement hasModal" data-modal-target="modalCweb">
-            <h4>
-              Certificado de profesionalidad en
-              <span class="highlighted2">desarrollo de aplicaciones web</span>
-            </h4>
-            <h5>2024</h5>
-          </div>
-          <div class="mapElement hasModal" data-modal-target="modalCwebUdemy">
-            <h4>
-              Curso online de <span class="highlighted2">desarrollo web</span>
-            </h4>
-            <h5>2023</h5>
-          </div>
+
+        <div id="contact">
+          <h2 class="sectionTitles">Contacto</h2>
         </div>
       </section>
-
       <!-- MODALES -->
       <div class="modal hiddenModal" id="modalDAM">
         <div class="modalContent">
@@ -275,6 +279,14 @@
             <div>
               <img
                 class="techPicture"
+                src="images/webDesign/csharp.webp"
+                alt="C#"
+              />
+              <span>C#</span>
+            </div>
+            <div>
+              <img
+                class="techPicture"
                 src="images/webDesign/css.webp"
                 alt="CSS"
               />
@@ -288,15 +300,6 @@
               />
               <span>HTML</span>
             </div>
-          </div>
-          <div>
-            <ul>
-              <li>Java</li>
-              <li>SQL</li>
-              <li>C#</li>
-              <li>XML</li>
-              <li>CSS/HTML</li>
-            </ul>
           </div>
         </div>
       </div>

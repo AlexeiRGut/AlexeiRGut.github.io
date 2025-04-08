@@ -81,8 +81,8 @@ navAbout.addEventListener("click", function () {
 //     window.scrollTo({ top: yOffset, behavior: 'smooth' });
 // })
 
-// navContact.addEventListener('click', function(){
-//     const contactoSection = document.getElementById('contactoSection');
-//     const yOffset = contactoSection.getBoundingClientRect().top + window.scrollY;
-//     window.scrollTo({ top: yOffset, behavior: 'smooth' });
-// })
+navContact.addEventListener("click", function () {
+  const contactoSection = document.getElementById("contact");
+  const yOffset = contactoSection.getBoundingClientRect().top + window.scrollY;
+  window.scrollTo({ top: yOffset, behavior: "smooth" });
+});
