@@ -886,6 +886,11 @@
   height: 50px;
 }
 
+.telefonica,
+.i4life {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 920px) {
   #presentation div {
     top: 20%;

@@ -164,3 +164,18 @@ function copyMail() {
       }, 3000);
     });
 }
+
+const telefonica = document.getElementsByClassName("telefonica");
+const i4life = document.getElementsByClassName("i4life");
+
+for (let element of telefonica) {
+  element.addEventListener("click", function () {
+    window.open("https://www.telefonica.com", "_blank");
+  });
+}
+
+for (let element of i4life) {
+  element.addEventListener("click", function () {
+    window.open("https://www.i4life.es", "_blank");
+  });
+}
