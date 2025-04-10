@@ -115,6 +115,7 @@
 }
 
 #leaf3 {
+  top: 45vh;
   animation: move3 6.6s linear infinite;
   animation-delay: 0.5s;
 }
@@ -126,23 +127,28 @@
 }
 
 #leaf5 {
+  top: 70vh;
   animation: move5 7s linear infinite;
 }
 
 #leaf6 {
+  top: 82vh;
   animation: move6 8.8s linear infinite;
   animation-delay: 3s;
 }
 
 #leaf7 {
+  top: 106vh;
   animation: move7 8s linear infinite;
 }
 
 #leaf8 {
+  top: 134vh;
   animation: move8 6.5s linear infinite;
 }
 
 #leaf9 {
+  top: 162vh;
   animation: move9 7.3s linear infinite;
   animation-delay: 5s;
 }
@@ -150,7 +156,7 @@
 #leaf10 {
   top: 140vh;
   animation: move2 7.7s linear infinite;
-  animation-delay: 1.5s;
+  animation-delay: 6.5s;
 }
 
 #leaf11 {
@@ -162,6 +168,29 @@
   top: 180vh;
   animation: move1 8.3s linear infinite;
   animation-delay: 3s;
+}
+
+#leaf13 {
+  top: 190vh;
+  animation: move7 6.3s linear infinite;
+  animation-delay: 4s;
+}
+
+#leaf14 {
+  top: 205vh;
+  animation: move2 7.1s linear infinite;
+}
+
+#leaf15 {
+  top: 215vh;
+  animation: move1 9s linear infinite;
+  animation-delay: 1s;
+}
+
+#leaf16 {
+  top: 230vh;
+  animation: move5 5.9s linear infinite;
+  animation-delay: 6s;
 }
 
 @keyframes move1 {
@@ -222,27 +251,26 @@
 @keyframes move3 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(45vh) rotateX(-45deg)
-      rotateY(-80deg);
+    transform: translateX(-20vw) translateY(0vh) rotateX(-45deg) rotateY(-80deg);
   }
   16.6% {
-    transform: translateX(0vw) translateY(47vh) rotateX(45deg) rotateY(30deg);
+    transform: translateX(0vw) translateY(2vh) rotateX(45deg) rotateY(30deg);
   }
   33.3% {
-    transform: translateX(16vw) translateY(53vh) rotateX(120deg) rotateY(100deg);
+    transform: translateX(16vw) translateY(8vh) rotateX(120deg) rotateY(100deg);
   }
   50% {
-    transform: translateX(36vw) translateY(56vh) rotateX(180deg) rotateY(220deg);
+    transform: translateX(36vw) translateY(11vh) rotateX(180deg) rotateY(220deg);
   }
   66.6% {
-    transform: translateX(62vw) translateY(52vh) rotateX(250deg) rotateY(300deg);
+    transform: translateX(62vw) translateY(7vh) rotateX(250deg) rotateY(300deg);
   }
   83.3% {
-    transform: translateX(82vw) translateY(59vh) rotateX(320deg) rotateY(390deg);
+    transform: translateX(82vw) translateY(14vh) rotateX(320deg) rotateY(390deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(105vw) translateY(62vh) rotateX(390deg)
+    transform: translateX(105vw) translateY(17vh) rotateX(390deg)
       rotateY(450deg);
   }
 }
@@ -277,27 +305,26 @@
 @keyframes move5 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(70vh) rotateX(-30deg) rotateY(90deg);
+    transform: translateX(-20vw) translateY(0vh) rotateX(-30deg) rotateY(90deg);
   }
   16.6% {
-    transform: translateX(0vw) translateY(72vh) rotateX(0deg) rotateY(180deg);
+    transform: translateX(0vw) translateY(2vh) rotateX(0deg) rotateY(180deg);
   }
   33.3% {
-    transform: translateX(25vw) translateY(75vh) rotateX(30deg) rotateY(270deg);
+    transform: translateX(25vw) translateY(5vh) rotateX(30deg) rotateY(270deg);
   }
   50% {
-    transform: translateX(46vw) translateY(85vh) rotateX(60deg) rotateY(360deg);
+    transform: translateX(46vw) translateY(15vh) rotateX(60deg) rotateY(360deg);
   }
   66.6% {
-    transform: translateX(68vw) translateY(90vh) rotateX(120deg) rotateY(450deg);
+    transform: translateX(68vw) translateY(20vh) rotateX(120deg) rotateY(450deg);
   }
   83.3% {
-    transform: translateX(83vw) translateY(100vh) rotateX(150deg)
-      rotateY(540deg);
+    transform: translateX(83vw) translateY(30vh) rotateX(150deg) rotateY(540deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(105vw) translateY(115vh) rotateX(210deg)
+    transform: translateX(105vw) translateY(45vh) rotateX(210deg)
       rotateY(630deg);
   }
 }
@@ -305,26 +332,26 @@
 @keyframes move6 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(82vh) rotateX(-45deg) rotateY(0deg);
+    transform: translateX(-20vw) translateY(0vh) rotateX(-45deg) rotateY(0deg);
   }
   16.6% {
-    transform: translateX(-5vw) translateY(85vh) rotateX(0deg) rotateY(90deg);
+    transform: translateX(-5vw) translateY(3vh) rotateX(0deg) rotateY(90deg);
   }
   33.3% {
-    transform: translateX(20vw) translateY(88vh) rotateX(45deg) rotateY(180deg);
+    transform: translateX(20vw) translateY(6vh) rotateX(45deg) rotateY(180deg);
   }
   50% {
-    transform: translateX(40vw) translateY(90vh) rotateX(90deg) rotateY(270deg);
+    transform: translateX(40vw) translateY(8vh) rotateX(90deg) rotateY(270deg);
   }
   66.6% {
-    transform: translateX(60vw) translateY(92vh) rotateX(135deg) rotateY(360deg);
+    transform: translateX(60vw) translateY(10vh) rotateX(135deg) rotateY(360deg);
   }
   83.3% {
-    transform: translateX(80vw) translateY(95vh) rotateX(150deg) rotateY(450deg);
+    transform: translateX(80vw) translateY(13vh) rotateX(150deg) rotateY(450deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(105vw) translateY(100vh) rotateX(180deg)
+    transform: translateX(105vw) translateY(18vh) rotateX(180deg)
       rotateY(540deg);
   }
 }
@@ -332,30 +359,26 @@
 @keyframes move7 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(106vh) rotateX(-60deg)
-      rotateY(90deg);
+    transform: translateX(-20vw) translateY(0vh) rotateX(-60deg) rotateY(90deg);
   }
   16.6% {
-    transform: translateX(-5vw) translateY(110vh) rotateX(0deg) rotateY(180deg);
+    transform: translateX(-5vw) translateY(4vh) rotateX(0deg) rotateY(180deg);
   }
   33.3% {
-    transform: translateX(18vw) translateY(115vh) rotateX(60deg) rotateY(270deg);
+    transform: translateX(18vw) translateY(9vh) rotateX(60deg) rotateY(270deg);
   }
   50% {
-    transform: translateX(39vw) translateY(120vh) rotateX(120deg)
-      rotateY(360deg);
+    transform: translateX(39vw) translateY(14vh) rotateX(120deg) rotateY(360deg);
   }
   66.6% {
-    transform: translateX(62vw) translateY(125vh) rotateX(150deg)
-      rotateY(450deg);
+    transform: translateX(62vw) translateY(19vh) rotateX(150deg) rotateY(450deg);
   }
   83.3% {
-    transform: translateX(85vw) translateY(130vh) rotateX(180deg)
-      rotateY(540deg);
+    transform: translateX(85vw) translateY(24vh) rotateX(180deg) rotateY(540deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(105vw) translateY(138vh) rotateX(240deg)
+    transform: translateX(105vw) translateY(32vh) rotateX(240deg)
       rotateY(630deg);
   }
 }
@@ -363,28 +386,26 @@
 @keyframes move8 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(134vh) rotateX(-45deg) rotateY(0deg);
+    transform: translateX(-20vw) translateY(0vh) rotateX(-45deg) rotateY(0deg);
   }
   16.6% {
-    transform: translateX(-5vw) translateY(140vh) rotateX(0deg) rotateY(90deg);
+    transform: translateX(-5vw) translateY(6vh) rotateX(0deg) rotateY(90deg);
   }
   33.3% {
-    transform: translateX(19vw) translateY(145vh) rotateX(45deg) rotateY(180deg);
+    transform: translateX(19vw) translateY(11vh) rotateX(45deg) rotateY(180deg);
   }
   50% {
-    transform: translateX(36vw) translateY(150vh) rotateX(90deg) rotateY(270deg);
+    transform: translateX(36vw) translateY(16vh) rotateX(90deg) rotateY(270deg);
   }
   66.6% {
-    transform: translateX(56vw) translateY(155vh) rotateX(135deg)
-      rotateY(360deg);
+    transform: translateX(56vw) translateY(21vh) rotateX(135deg) rotateY(360deg);
   }
   83.3% {
-    transform: translateX(76vw) translateY(160vh) rotateX(180deg)
-      rotateY(450deg);
+    transform: translateX(76vw) translateY(26vh) rotateX(180deg) rotateY(450deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(105vw) translateY(165vh) rotateX(210deg)
+    transform: translateX(105vw) translateY(31vh) rotateX(210deg)
       rotateY(540deg);
   }
 }
@@ -392,29 +413,26 @@
 @keyframes move9 {
   0% {
     opacity: 1;
-    transform: translateX(-20vw) translateY(162vh) rotateX(-60deg) rotateY(0deg);
+    transform: translateX(-20vw) translateY(0vh) rotateX(-60deg) rotateY(0deg);
   }
   16.6% {
-    transform: translateX(3vw) translateY(165vh) rotateX(0deg) rotateY(120deg);
+    transform: translateX(3vw) translateY(3vh) rotateX(0deg) rotateY(120deg);
   }
   33.3% {
-    transform: translateX(30vw) translateY(170vh) rotateX(60deg) rotateY(240deg);
+    transform: translateX(30vw) translateY(8vh) rotateX(60deg) rotateY(240deg);
   }
   50% {
-    transform: translateX(50vw) translateY(175vh) rotateX(120deg)
-      rotateY(330deg);
+    transform: translateX(50vw) translateY(13vh) rotateX(120deg) rotateY(330deg);
   }
   66.6% {
-    transform: translateX(76vw) translateY(180vh) rotateX(150deg)
-      rotateY(420deg);
+    transform: translateX(76vw) translateY(18vh) rotateX(150deg) rotateY(420deg);
   }
   83.3% {
-    transform: translateX(88vw) translateY(185vh) rotateX(180deg)
-      rotateY(510deg);
+    transform: translateX(88vw) translateY(23vh) rotateX(180deg) rotateY(510deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(105vw) translateY(190vh) rotateX(240deg)
+    transform: translateX(105vw) translateY(28vh) rotateX(240deg)
       rotateY(600deg);
   }
 }
@@ -908,57 +926,74 @@
   }
 
   #leaf2 {
-    top: 10vh;
+    top: 30vh;
     animation: move2 5.4s linear infinite;
   }
 
   #leaf3 {
-    top: 30vh;
+    top: 45vh;
     animation: move3 4.1s linear infinite;
   }
 
   #leaf4 {
-    top: 40vh;
+    top: 75vh;
     animation: move4 3.7s linear infinite;
   }
 
   #leaf5 {
-    top: 65vh;
+    top: 105vh;
     animation: move5 4.5s linear infinite;
   }
 
   #leaf6 {
-    top: 85vh;
+    top: 140vh;
     animation: move6 6.3s linear infinite;
   }
 
   #leaf7 {
-    top: 100vh;
+    top: 430vh;
     animation: move7 5.5s linear infinite;
   }
 
   #leaf8 {
-    top: 110vh;
+    top: 185vh;
     animation: move8 4s linear infinite;
   }
 
   #leaf9 {
-    top: 130vh;
+    top: 210vh;
     animation: move9 4.8s linear infinite;
   }
   #leaf10 {
-    top: 150vh;
+    top: 225vh;
     animation: move2 5.2s linear infinite;
   }
   #leaf11 {
-    top: 160vh;
-    animation: move5 4.5s linear infinite;
+    top: 250vh;
+    animation: move4 4.5s linear infinite;
   }
   #leaf12 {
-    top: 180vh;
+    top: 275vh;
     animation: move1 5.8s linear infinite;
   }
+  #leaf13 {
+    top: 310vh;
+    animation: move1 3.8s linear infinite;
+  }
+  #leaf14 {
+    top: 340vh;
+    animation: move1 4.6s linear infinite;
+  }
+  #leaf15 {
+    top: 375vh;
+    animation: move1 6.5s linear infinite;
+  }
+  #leaf16 {
+    top: 405vh;
+    animation: move1 3.4s linear infinite;
+  }
 }
+
 @media only screen and (max-width: 768px) {
   #content {
     background-position: right;
